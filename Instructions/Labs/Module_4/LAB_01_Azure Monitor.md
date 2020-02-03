@@ -188,7 +188,7 @@ Application Insights can gather telemetry data from any internet-connected appli
 
 1.  You can now reopen the Application Insights **Overview** page in the Azure portal, where you retrieved your instrumentation key, to view details about your currently running application. The four default charts on the overview page are scoped to server-side application data. Since we are instrumenting the client/browser-side interactions with the JavaScript SDK this particular view doesn't apply unless we also have a server-side SDK installed.
 
-2.  Click on     ![Screenshot](../Media/Module-4/9bcac7c1-ee5e-40ad-a23c-7647dc380e39.png) Application Map icon  **Analytics**.  This opens **Analytics**, which provides a rich query language for analyzing all data collected by Application Insights. To view data related to the client-side browser requests run the  following query:
+2.  Click on **Logs**.  This opens **Logs**, which provides a rich query language for analyzing all data collected by Application Insights. To view data related to the client-side browser requests run the  following query:
 
     ```json
     // average pageView duration by name
@@ -207,7 +207,7 @@ Application Insights can gather telemetry data from any internet-connected appli
 
        ![Screenshot](../Media/Module-4/6fbf0845-41b3-4aa1-a213-9083468aacd8.png)
 
-3.  Go back to the **Overview** page. Click on **Browser** from under the **Investigate** header, then select **Performance**  Here you find metrics related to the performance of your website. There is also a corresponding view for analyzing failures and exceptions in your website. You can click **Samples** to drill into individual transaction details. From here, you can access the end-to-end transaction details.
+3.  Go back to the **Overview** page. Click on **Performance** from under the **Investigate** header.  Here you find metrics related to the performance of your website. There is also a corresponding view for analyzing failures and exceptions in your website. You can click **Samples** to drill into individual transaction details. From here, you can access the end-to-end transaction details.
 
        ![Screenshot](../Media/Module-4/3546439a-3706-4094-a776-504d5d1b11ca.png)
 
