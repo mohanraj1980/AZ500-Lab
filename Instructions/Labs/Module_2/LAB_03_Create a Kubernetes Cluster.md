@@ -43,11 +43,7 @@ Azure Kubernetes Service (AKS) is a managed Kubernetes service that lets you qui
 To manage a Kubernetes cluster, you use kubectl, the Kubernetes command-line client. If you use Azure Cloud Shell, `kubectl` is already installed.
 
 
-1.  In the **Azure Cloud Shell** enter the following commands
-
-     ```azurecli
-    az aks install-cli
-     ```
+1.  Open **Azure Cloud Shell** in Bash mode.
 
 
 1.  To configure `kubectl` to connect to your **Kubernetes cluster**, use the az-aks-get-credentials command. This command downloads credentials and configures the **Kubernetes CLI** to use them.

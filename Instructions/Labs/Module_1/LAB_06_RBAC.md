@@ -177,22 +177,22 @@ In RBAC, to remove access, you remove a role assignment.
 
 In this exercise you use PowerShell to :
 
--   Use the `Get-AzureRMRoleAssignment` command to list the role assignments
--   Use the `Remove-AzureRmResourceGroup` command to remove access
+-   Use the `Get-AzRoleAssignment` command to list the role assignments
+-   Use the `Remove-AzResourceGroup` command to remove access
 
 
 ### Task 1: Grant access
   
 
-To grant access for the user, you use the New-AzureRmRoleAssignment command to assign a role. You must specify the security principal, role definition, and scope.  
+To grant access for the user, you use the New-AzRoleAssignment command to assign a role. You must specify the security principal, role definition, and scope.  
 
 
 1.  Launch the **Cloud Shell PowerShell**.
   
-1.  Get the ID of your subscription using the **`Get-AzureRmSubscription`** command.
+1.  Get the ID of your subscription using the **`Get-AzSubscription`** command.
   
        ```powershell
-      Get-AzureRmSubscription
+      Get-AzSubscription
        ```
 
   
@@ -207,7 +207,7 @@ To grant access for the user, you use the New-AzureRmRoleAssignment command to a
 1.  Assign the Reader role to the user at the subscription scope by using the following command (replacing your domain with the tenant domain you noted earlier):
   
        ```powershell
-      New-AzureRmRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Reader" -Scope $subScope  
+      New-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Reader" -Scope $subScope  
        ```
   
       ![Screenshot](../Media/Module-1/f468a5df-aab2-42db-9e28-7ea25a2262ca.png)
@@ -215,26 +215,26 @@ To grant access for the user, you use the New-AzureRmRoleAssignment command to a
 1.  Assign the Contributor role to the user at the resource group scope using the following command:
   
        ```powershell
-      New-AzureRmRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Contributor" -ResourceGroupName "myRBACrg"
+      New-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Contributor" -ResourceGroupName "myRBACrg"
        ```
 
   
 ### Task 2: List access  
   
-1.  To verify the access for the subscription, use the Get-AzureRmRoleAssignment command to list the role assignments use the following command:
+1.  To verify the access for the subscription, use the Get-AzRoleAssignment command to list the role assignments use the following command:
   
        ```powershell
-      Get-AzureRmRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -Scope $subScope
+      Get-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -Scope $subScope
        ```
 
        ![Screenshot](../Media/Module-1/d190e8c5-ffc7-4638-ad7e-cc2643b972a0.png)
 
     In the output, you can see that the Reader role has been assigned to the RBAC Tutorial User at the subscription scope.
 
-2.  To verify the access for the resource group, use the Get-AzureRmRoleAssignment command to list the role assignments using the following command:
+2.  To verify the access for the resource group, use the Get-AzRoleAssignment command to list the role assignments using the following command:
   
      ```powershell
-    Get-AzureRmRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com     -ResourceGroupName "myRBACrg"
+    Get-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com     -ResourceGroupName "myRBACrg"
      ```
 
 
@@ -243,27 +243,27 @@ To grant access for the user, you use the New-AzureRmRoleAssignment command to a
 ### Task 3: Remove access
   
 
-To remove access for users, groups, and applications, use `Remove-AzureRmRoleAssignment` to remove a role assignment.
+To remove access for users, groups, and applications, use `Remove-AzRoleAssignment` to remove a role assignment.
 
 
 1.  Use the following command to remove the Contributor role assignment for the user at the resource group scope.
   
      ```powershell
-    Remove-AzureRmRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Contributor" -ResourceGroupName "myRBACrg"
+    Remove-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Contributor" -ResourceGroupName "myRBACrg"
      ```
   
   
 1.  Use the following command to remove the Reader role assignment for the user at the subscription scope.
 
      ```powershell
-    Remove-AzureRmRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Reader" -Scope $subScope
+    Remove-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Reader" -Scope $subScope
      ```
   
   
 1.  Remove the resource group by running the following command (When prompted to confirm press Y and press enter):
   
      ```powershell
-    Remove-AzureRmResourceGroup -Name "myRBACrg"
+    Remove-AzResourceGroup -Name "myRBACrg"
      ```
 
 1.  Close the **Cloud Shell**.  

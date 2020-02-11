@@ -68,13 +68,13 @@ The best way to ensure that locks are in place and protecting your resources is 
 1.  Open the Cloud Shell (PowerShell) and run the following commands to create a Lock on the Storage Account. _(Change XXXXXX in the command to the name of your Storage Account)_
 
      ```powershell
-    New-AzureRmResourceLock -LockLevel CanNotDelete -LockName criticalStorageLock -ResourceName XXXXXX  -ResourceType Microsoft.Storage/storageAccounts -ResourceGroupName LockRG
+    New-AzResourceLock -LockLevel CanNotDelete -LockName criticalStorageLock -ResourceName XXXXXX  -ResourceType Microsoft.Storage/storageAccounts -ResourceGroupName LockRG
      ```
 
 1.  To remove a lock use the following command. _(Change XXXXXX in the command to the name of your Storage Account)_
 
      ```powershell
-    Remove-AzureRmResourceLock -LockName criticalStorageLock -ResourceName  XXXXX -ResourceGroupName LockRG -ResourceType Microsoft.Storage/storageAccounts
+    Remove-AzResourceLock -LockName criticalStorageLock -ResourceName  XXXXX -ResourceGroupName LockRG -ResourceType Microsoft.Storage/storageAccounts
      ```
 
 

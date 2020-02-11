@@ -192,7 +192,7 @@ You will enable your client application to access the Azure SQL Database service
      ```
     
      ```powershell
-    Login-AzureRmAccount
+    Login-AzAccount
      ```
     
      ```powershell
