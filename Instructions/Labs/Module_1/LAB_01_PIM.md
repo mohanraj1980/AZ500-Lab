@@ -25,6 +25,13 @@ This lab requires creating a user that will be used for PIM.
 
 1.  In the **Azure Portal** open the **Cloud Shell** in **PowerShell** mode. If prompted click **Create Storage**.
 
+1. Run the following command to authenticate
+
+    ```powershell
+    Connect-AzureAD
+    ```
+    **Note**: If you close your Cloud Shell session you may be required to enter this command again throughout the labs.
+
 1.  Run the following PowerShell Commands to create an AD user and password in your default domain
 
     ```powershell
