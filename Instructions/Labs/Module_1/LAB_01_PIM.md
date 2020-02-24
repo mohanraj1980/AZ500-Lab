@@ -121,16 +121,6 @@ In the following task you will make  a user eligible for an Azure AD directory r
 
      ![Screenshot](../Media/Module-1/ed36b086-ae87-409f-af33-66848b3df1b9.png)
  
-1.  Click **Sign up PIM for Azure AD Roles**.
-
-     ![Screenshot](../Media/Module-1/fea44542-ff4b-4627-9700-462d39d55e76.png)
-
-
-1.  Click **Sign Up** and click **Yes**.
-
-     ![Screenshot](../Media/Module-1/d617900b-a68b-452c-867f-3f27c9e48426.png)
-
-1.  **Refresh the Browser**.
 
 1.  Click **Roles**.
 
@@ -143,80 +133,27 @@ In the following task you will make  a user eligible for an Azure AD directory r
 
 1.  Click **Select a role**, and click **Billing Administrator** and then click  **Select**.
 
-     ![Screenshot](../Media/Module-1/42b809bd-9381-4d52-ae98-cb62a4c21730.png)
+     ![Screenshot](../Media/Module-1/2020-02-24_13-50-38.png)
 
-1.  Click **Select members**, select **Isabella** and then click **Select**.
+1.  Click **Select a member**, select **Isabella** and then click **Select**.
 
      ![Screenshot](../Media/Module-1/923c874d-67ca-4753-9831-c801ab596ad8.png)
 
-1.  In Add managed members, click **OK** to add the user to the role.
+1.  On the Membership settings blade, click **Save**.
 
-1.  Review the added member
+     ![Screenshot](../Media/Module-1/2020-02-24_13-52-53.png)
 
-     ![Screenshot](../Media/Module-1/febc9219-e55b-4b36-9286-f2ccbf281fd5.png)
+1.  On the New assignment blade, click **Add**  to add the user to the role.
+
+     ![Screenshot](../Media/Module-1/2020-02-24_13-54-02.png)
+
+1. Select the **Billing Administrator** role.
+
+1.  Review the added assignment.
+
+     ![Screenshot](../Media/Module-1/2020-02-24_14-12-12.png)
 
 1.  When the role is assigned, the user you selected will appear in the members list as **Eligible** for the role.
-
-
-### Task 2: Make a role assignment permanent
-
-
-By default, new users are only eligible for a directory role. Follow these steps if you want to make a role assignment permanent.
-
-
-
-1.  In the Azure Portal, click **All services** and search for and select **Azure AD Privileged Identity Management**.
-
-     ![Screenshot](../Media/Module-1/a52510a3-b2a2-4b21-91a8-ee7f34b39a72.png)
-
-1.  Click **Azure AD roles**.
-
-     ![Screenshot](../Media/Module-1/9914545c-313f-4c9a-84a5-d7c383c7ee37.png)
-
-1.  Click **Members**.
-
-     ![Screenshot](../Media/Module-1/2aedf4ab-e829-4ce3-afcc-b77048125bf9.png)
-
-1.  Click the **Eligible** role that you want to make permanent.
-
-     ![Screenshot](../Media/Module-1/2f8e7066-ad42-48ef-90ed-7e9d9f19d3bc.png)
- 
-1.  Click **More** and then click **Make permanent**.
-
-     ![Screenshot](../Media/Module-1/9c6837d6-b9c1-436e-babf-7436b8a71de7.png)
- 
-
-**Results**: The role is now listed as **permanent**.
-
-
-### Task 3: Remove a user from a role
-
-
-You can remove users from role assignments, but make sure there is always at least one user who is a permanent Global Administrator.
-
-
-
-1.  In the Azure Portal, click **All services** and search for and select **Azure AD Privileged Identity Management**.
-
-     ![Screenshot](../Media/Module-1/a52510a3-b2a2-4b21-91a8-ee7f34b39a72.png)
-
-1.  Click **Azure AD roles**.
-
-     ![Screenshot](../Media/Module-1/9914545c-313f-4c9a-84a5-d7c383c7ee37.png)
-
-1.  Click **Members**.
-
-     ![Screenshot](../Media/Module-1/2aedf4ab-e829-4ce3-afcc-b77048125bf9.png)
-
-1.  Click a role assignment you want to remove.
-
-     ![Screenshot](../Media/Module-1/439cb04b-fa00-42e2-a302-729b1108e806.png)
- 
-1.  Click **More** and then click **Remove**.
-
-     ![Screenshot](../Media/Module-1/de5a2f9d-4b3f-4f4d-8acb-c55788410684.png)
- 
-1.  In the message that asks you to confirm, click **Yes**. The role assignment will be removed.
 
 
 
@@ -226,22 +163,6 @@ You can remove users from role assignments, but make sure there is always at lea
 
 
 When you need to take on an Azure AD directory role, you can request activation by using the **My roles** navigation option in PIM.
-
-
-1.  In the Azure Portal, click **All services** and search for and select **Azure AD Privileged Identity Management**.
-
-     ![Screenshot](../Media/Module-1/a52510a3-b2a2-4b21-91a8-ee7f34b39a72.png)
-
-1.  Click **Azure AD roles**.
-
-     ![Screenshot](../Media/Module-1/9914545c-313f-4c9a-84a5-d7c383c7ee37.png)
- 
-1.  Click **Quick Start** and click **Assign eligibility**.
-
-     ![Screenshot](../Media/Module-1/a7af9dbc-d901-4c9e-9cd5-63fd30726639.png)
-
-1.  Click **Billing Administrator** and add Isabella back into the **Billing Administrators** role.
-
 
 1.  Open an **In Private** browsing session and navigate to **`https://portal.azure.com`** and login as **Isabella** using her UPN. example Isabella@myaad.onmicrosoft.com with the password **Pa55w.rd**.  When prompted change Isabella's password.
 
@@ -261,27 +182,13 @@ When you need to take on an Azure AD directory role, you can request activation 
 
      ![Screenshot](../Media/Module-1/bd3d79a3-a66d-48a5-8b2e-94c18358b250.png)
 
-1.  Click **Verify your identity before proceeding**. You only have to authenticate once per session. Run through the wizard to authenticate Isabella.
+1.  Click **Additional verification required.  Click to continue**. You only have to authenticate once per session. Run through the wizard to authenticate Isabella.
 
-     ![Screenshot](../Media/Module-1/3f5812ed-06cc-4430-ae88-143af9721cf2.png)
+     ![Screenshot](../Media/Module-1/2020-02-24_14-16-20.png)
  
-1.  Once returned to the Azure Portal, click **All services** and search for and select **Azure AD Privileged Identity Management**.
+1.  Once returned to the Azure Portal, enter an activation reason and click **Activate**.
 
-     ![Screenshot](../Media/Module-1/a52510a3-b2a2-4b21-91a8-ee7f34b39a72.png)
-
-1.  Select **Azure AD Roles** then click **Activate your role** on the Quick start blade.
-
-1.  On the Billing Administrator role, scroll to the right and click **Activate**.
-
-     ![Screenshot](../Media/Module-1/bd3d79a3-a66d-48a5-8b2e-94c18358b250.png)
-
-1.  Click **Activate**.
-
-     ![Screenshot](../Media/Module-1/31de8163-8c00-4810-a2be-2c8dd464c6d6.png)
-
-1.  Enter an activation reason and click **Activate**
-
-     ![Screenshot](../Media/Module-1/b17f972d-8df2-4b78-a361-202bab94dd17.png)
+     ![Screenshot](../Media/Module-1/2020-02-24_14-17-53.png)
 
 By default, roles do not require approval unless configured explicitly in settings. 
 
@@ -298,28 +205,12 @@ When you activate a role in PIM, it can take up to 10 minutes before you can acc
 
 1.  Click **Sign Out**.
 
-     ![Screenshot](../Media/Module-1/9f4b91a0-3102-4046-a2a4-d57f3f96f24d.png)
+     ![Screenshot](../Media/Module-1/2020-02-24_14-20-01.png)
 
 1.  Log back in as Isabella.
 
 
-### Task 3: View the status of your requests
-
-
-You can view the status of your pending requests to activate.
-
-
-1.  Still signed in as **Isabella**, in the Azure Portal, click **All services** and search for and select **Azure AD Privileged Identity Management**.
-
-     ![Screenshot](../Media/Module-1/a52510a3-b2a2-4b21-91a8-ee7f34b39a72.png)
-
-1.  Click **Azure AD Roles**.
-
-1.  Click **My requests** to see a list of your requests.
-
-     ![Screenshot](../Media/Module-1/2d924aa8-a60e-4291-bd06-70f02694a313.png)
-
-### Task 4: Deactivate a role
+### Task 3: Deactivate a role
 
 
 Once a role has been activated, it automatically deactivates when its time limit (eligible duration) is reached.
@@ -351,7 +242,7 @@ If you complete your administrator tasks early, you can also deactivate a role m
 1.  Click **Yes** to confirm.
 
 
-### Task 5: Cancel a pending request
+### Task 4: Cancel a pending request
 
 
 If you do not require activation of a role that requires approval, you can cancel a pending request at any time.
@@ -394,7 +285,7 @@ Role assignments become "stale" when users have privileged access that they don'
       - Reviewers:  **Select your account**
  
  
-     ![Screenshot](../Media/Module-1/84274ed2-be53-4b3f-853a-c85f0dcfeab2.png)
+     ![Screenshot](../Media/Module-1/2020-02-24_15-09-45.png)
  
 1.  Once the review has completed and has a status of Active, click on the **Global Admin Review**.
 
@@ -458,7 +349,7 @@ You can customize some of the security alerts in PIM to work with your environme
 1.  Click **Settings** and then **Alerts**.
 
 
-1.  Click an alert name to configure the setting for that alert.
+1.  Click an alert name to see the settings for the preconfigured alerts.
 
 
 ## Exercise 5 - PIM Resource Workflows
@@ -473,9 +364,9 @@ You can customize some of the security alerts in PIM to work with your environme
 
 1.  Click **Roles** and select **Global Administrator**.
 
-1.  Scroll down and change **Require Approval** to **Enable** and click **Save**.
+1.  Scroll down and select **Require Approval** and  select your account as the approver then click **Update**.
 
-     ![Screenshot](../Media/Module-1/da35f974-b196-4ce4-bab7-7ca071d59124.png)
+     ![Screenshot](../Media/Module-1/2020-02-24_15-14-41.png)
 
 ### Task 2: Enable Isabella for Global Administrator privileges.
 
@@ -487,7 +378,7 @@ You can customize some of the security alerts in PIM to work with your environme
 
      ![Screenshot](../Media/Module-1/ae3755ac-bd82-4e70-a102-ccbfc3aee48f.png)
 
-1.  Select **Global Administrator**.
+1.  Select **Global Administrator** and click **Edit**.
 
 
 1.  Select **+ Add Member** and select **Isabella**.
@@ -507,19 +398,11 @@ You can customize some of the security alerts in PIM to work with your environme
 
 1.  Verify Isabella's identity using the wizard.
 
-     ![Screenshot](../Media/Module-1/0b0408a6-3690-42db-a8f0-c25e7a0b0da3.png)
+     ![Screenshot](../Media/Module-1/2020-02-24_15-32-04.png)
 
-1.  Return back to **My Roles** in **Azure AD Privileged Identity Management**.
+1.  Once you are returned to the **Activate - Global Administrator** blade, enter the justification **I need to carry out some administrative tasks** and click **Activate**.
 
-1.  **Activate** the Global Administrator Role.
-
-1.  Click **Activate**.
-
-     ![Screenshot](../Media/Module-1/cd9571ab-b89c-4086-85a7-29d31b1982bf.png)
-
-1.  Enter the justification **I need to carry out some administrative tasks** and click **Activate**.
-
-     ![Screenshot](../Media/Module-1/e41c4fff-d9aa-4fe9-b1d1-b3c8dac98597.png)
+     ![Screenshot](../Media/Module-1/2020-02-24_15-33-52.png)
 
 
 ### Task 3: Approve or deny requests for Azure resource roles in PIM
@@ -528,7 +411,7 @@ You can customize some of the security alerts in PIM to work with your environme
 With Azure AD Privileged Identity Management (PIM), you can configure roles to require approval for activation, and choose one or multiple users or groups as delegated approvers. Follow the steps in this article to approve or deny requests for Azure resource roles.
 
 
-###### View pending requests
+#### View pending requests
 
 
 As a delegated approver, you'll receive an email notification when an Azure resource role request is pending your approval. You can view these pending requests in PIM.
@@ -542,19 +425,14 @@ As a delegated approver, you'll receive an email notification when an Azure reso
 
      ![Screenshot](../Media/Module-1/fbc2f18d-f5a2-4139-b92d-7c19311aec1c.png)
 
-1.  Click the request from Isabella and click **Approve**.
+    **Note**: You may need to refresh your browser to see the request.
 
-     ![Screenshot](../Media/Module-1/d85bed90-6e2d-4cac-9f84-34a1ef96e0b2.png)
+1.  Click the request from Isabella and enter the justification **Granted for this task** and click **Approve**.
 
-1.  Enter a reason **Granted for this task"" and click **Approve**.
+     ![Screenshot](../Media/Module-1/2020-02-24_15-36-06.png)
 
-      ![Screenshot](../Media/Module-1/d62b2b94-79c6-466a-b165-d33ea5d5b149.png)
 
-1.  A notification appears with your approval.
-
-     ![Screenshot](../Media/Module-1/9def5a78-8fc4-45e4-b49c-4375294b6cdf.png)
-
-1.  Switch back to the In Private Browsing session where Isabella is signed in and click My Roles and note the status is now approved.
+1.  Switch back to the In Private Browsing session where Isabella is signed in and click My Roles and click the Active roles tab.  Note the status.
 
      ![Screenshot](../Media/Module-1/fe734263-57c8-4cc9-b79f-848d7d4f9488.png)
 
@@ -574,7 +452,7 @@ Follow these steps to view the audit history for Azure AD roles.
 
 1.  Click **Azure AD roles**.
 
-1.  Click **Directory roles audit history**.
+1.  Click **Resource audit**.
 
     Depending on your audit history, a column chart is displayed along with the total activations, max activations per day, and average activations per day.
 
@@ -594,17 +472,7 @@ Follow these steps to view the audit history for Azure AD roles.
 
 ### Task 2: Filter audit history
 
-1.  At the top of the audit history page, click the **Filter** button.
-
-    The **Update chart parameters** pane appears.
-
-1.  In **Time range**, select a time range.
-
-1.  In **Roles**, add checkmarks for the roles you want to view.
-
-1.  Click **Done** to view the filtered audit history.
-
-
+1.  At the top of the audit history page, use the filter options to filter the results.
 
 **Results**: You have now completed this lab.
 
