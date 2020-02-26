@@ -66,12 +66,14 @@ warning
 
 1.  **Enter** the following **Powerhshell Commands**.
 
+***Note*** Replace the section **{GlobalUniqueName}** with a globally unique name
+
      ```powershell
-    New-AzEventHubNamespace -ResourceGroupName Mod3Lab3  -NamespaceName Mod3Lab3 -Location eastus
+    New-AzEventHubNamespace -ResourceGroupName Mod3Lab3  -NamespaceName {GlobalUniqueName} -Location eastus
      ```
 
      ```powershell
-    New-AzEventHub -ResourceGroupName Mod3Lab3 -NamespaceName Mod3Lab3  -EventHubName Mod3Lab3 -MessageRetentionInDays 3
+    New-AzEventHub -ResourceGroupName Mod3Lab3 -NamespaceName {GlobalUniqueName}  -EventHubName Mod3Lab3 -MessageRetentionInDays 3
      ```
 
 1.  When these commands have completed click **configure under event hubs**
