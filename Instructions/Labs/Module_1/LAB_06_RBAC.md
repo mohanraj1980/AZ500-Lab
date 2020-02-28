@@ -45,16 +45,15 @@ In this module, you'll learn about Role-Based Access Control as the foundation t
   
 8.  **Enter the following commands** to create a user in the PS cloud shell **replacing yourdomain** with your domain noted down erlier
 
-     ```powershell
+      ```powershell
       $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
       ```
-       ```powershell
+      ```powershell
       $PasswordProfile.Password = "Pa55w.rd"
       ```
-       ```powershell
+      ```powershell
       New-AzureADUser -DisplayName "Mark" -PasswordProfile $PasswordProfile     -UserPrincipalName "Mark@yourdomain.onmicrosoft.com" -AccountEnabled $true -MailNickName "Mark"
-
-     ```
+      ```
  
      ![Screenshot](../Media/Module-1/d5e26f07-a18e-4ae4-84aa-318eac3d5b5b.png)
 
@@ -70,9 +69,9 @@ In this module, you'll learn about Role-Based Access Control as the foundation t
 
 11.  Enter the following command in **azure CLI** to create a user in Azure CLI **replacing yourdomain** with the domain you noted earlier.
  
-       ```cli
+      ```cli
       az ad user create --display-name Tracy --password Pa55w.rd --user-principal-name Tracy@yourdomain.onmicrosoft.com
-       ```
+      ```
 
 
 You should now have 3 users in your Azure AD
@@ -95,15 +94,15 @@ You should now have 3 users in your Azure AD
 
 19.  In the **Cloud Shell** enter the following command:
 
-       ```cli
+      ```cli
       az ad group create --display-name ServiceDesk --mail-nickname ServiceDesk
-       ```
+      ```
 
 20.  Change the Cloud Shell to **PowerShell** and enter the following command:
 
-       ```powershell
+      ```powershell
       New-AzureADGroup -DisplayName "Junior Admins" -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
-       ```
+      ```
  
 1.  Exit the **Cloud Shell**.
 
@@ -191,41 +190,41 @@ To grant access for the user, you use the New-AzRoleAssignment command to assign
   
 1.  Get the ID of your subscription using the **`Get-AzSubscription`** command.
   
-       ```powershell
+      ```powershell
       Get-AzSubscription
-       ```
+      ```
 
   
 1.  Save the subscription scope in a variable replacing the 000000's with your subscription ID.
   
-       ```powershell
+      ```powershell
       $subScope = "/subscriptions/00000000-0000-0000-0000-000000000000" 
-       ```  
+      ```  
   
 
   
 1.  Assign the Reader role to the user at the subscription scope by using the following command (replacing your domain with the tenant domain you noted earlier):
   
-       ```powershell
+      ```powershell
       New-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Reader" -Scope $subScope  
-       ```
+      ```
   
       ![Screenshot](../Media/Module-1/f468a5df-aab2-42db-9e28-7ea25a2262ca.png)
   
 1.  Assign the Contributor role to the user at the resource group scope using the following command:
   
-       ```powershell
+      ```powershell
       New-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Contributor" -ResourceGroupName "myRBACrg"
-       ```
+      ```
 
   
 ### Task 2: List access  
   
 1.  To verify the access for the subscription, use the Get-AzRoleAssignment command to list the role assignments use the following command:
   
-       ```powershell
+      ```powershell
       Get-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -Scope $subScope
-       ```
+      ```
 
        ![Screenshot](../Media/Module-1/d190e8c5-ffc7-4638-ad7e-cc2643b972a0.png)
 
@@ -233,9 +232,9 @@ To grant access for the user, you use the New-AzRoleAssignment command to assign
 
 2.  To verify the access for the resource group, use the Get-AzRoleAssignment command to list the role assignments using the following command:
   
-     ```powershell
+    ```powershell
     Get-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com     -ResourceGroupName "myRBACrg"
-     ```
+    ```
 
 
  In the output, you can see that both the Contributor and Reader roles have been assigned to the RBAC Tutorial User. The Contributor role is at the myRBACrg resource group scope and the Reader role is inherited at the subscription scope.
@@ -248,23 +247,23 @@ To remove access for users, groups, and applications, use `Remove-AzRoleAssignme
 
 1.  Use the following command to remove the Contributor role assignment for the user at the resource group scope.
   
-     ```powershell
+    ```powershell
     Remove-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Contributor" -ResourceGroupName "myRBACrg"
-     ```
+    ```
   
   
 1.  Use the following command to remove the Reader role assignment for the user at the subscription scope.
 
-     ```powershell
+    ```powershell
     Remove-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Reader" -Scope $subScope
-     ```
+    ```
   
   
 1.  Remove the resource group by running the following command (When prompted to confirm press Y and press enter):
   
-     ```powershell
+    ```powershell
     Remove-AzResourceGroup -Name "myRBACrg"
-     ```
+    ```
 
 1.  Close the **Cloud Shell**.  
 

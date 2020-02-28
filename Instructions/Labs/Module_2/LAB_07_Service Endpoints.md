@@ -106,16 +106,16 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 10.  Select **+ Add**.
 11.  Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the subnet from anywhere. The rule overrides a default security rule that denies all inbound traffic from the internet. Remote desktop connections are allowed to the subnet so that connectivity can be tested in a later step. Under **SETTINGS**, select **Inbound security rules**, select **+Add**, enter the following values, and then select **Add**:
 
-        |Setting|Value|
-        |----|----|
-        |Source| Any |
-        |Source port ranges| * |
-        |Destination | Select **VirtualNetwork**|
-        |Destination port ranges| 3389 |
-        |Protocol|Any|
-        |Action|Allow|
-        |Priority|120|
-        |Name|Allow-RDP-All|
+   |Setting|Value|
+   |----|----|
+   |Source| Any |
+   |Source port ranges| * |
+   |Destination | Select **VirtualNetwork**|
+   |Destination port ranges| 3389 |
+   |Protocol|Any|
+   |Action|Allow|
+   |Priority|120|
+   |Name|Allow-RDP-All|
 
 12.  Under **SETTINGS**, select **Subnets**.
 13.  Select **+ Associate**

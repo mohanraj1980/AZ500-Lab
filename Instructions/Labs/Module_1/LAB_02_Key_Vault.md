@@ -32,22 +32,22 @@ In this exercise, you will use PowerShell to create an Azure Key Vault.
 
 2.  Use the following command to authenticate to Azure using the account for your Azure subscription.
 
-     ```powershell
+    ```powershell
     Login-AzAccount
-     ```
+    ```
 
 4.  Create a new Resource Group 
 
-     ```powershell
+    ```powershell
     New-AzResourceGroup -Name 'KeyVaultPSRG' -Location 'eastus'
-     ```
+    ```
 
 
 5.  Create a key vault in the resource group. **The VaultName must be unique.**
 
-     ```powershell
+    ```powershell
     New-AzKeyVault -VaultName 'KeyVaultPS' -ResourceGroupName    'KeyVaultPSRG' -Location 'eastus'
-     ```
+    ```
 
     **Note**: The output of this shows important pieces of information: Vault Name in this case that is KeyVaultPS and the Vault URI: `https://KeyVaultPS.vault.azure.net`
 
@@ -71,9 +71,9 @@ In this exercise, you will use PowerShell to create an Azure Key Vault.
 
 2.  Add a software-protected key to the Key Vault using this command. Be sure to change the placeholder text to your vault name.
 
-     ```powershell
+    ```powershell
     $key = Add-AZKeyVaultKey -VaultName '<YourVaultName>' -Name 'MyLabKey' -Destination 'Software'
-     ```
+    ```
 
 3.  Move back to **KeyVaultPS** in the Azure portal. Click **Keys** under Settings in the left navigation pane.
 
@@ -88,32 +88,32 @@ In this exercise, you will use PowerShell to create an Azure Key Vault.
 
 7.  Move back to the PowerShell window. To display the current version of the key, enter the following command.
 
-     ```powershell
+    ```powershell
     $Key.key.kid
-     ```
+    ```
 
 
 8.  To view the Key you just created you can use the Get-AzureKeyVaultKey cmdlet. Be sure to change the placeholder text to your vault name.
 
-     ```powershell
+    ```powershell
     Get-AZKeyVaultKey -VaultName '<YourVaultName>'
-     ```
+    ```
 
 
 ### Task 4: Add a Secret to Key Vault
 
 1.  Next, you will add a secret to the **KeyVaultPS**. To do this, add a variable named **$secretvalue** using the following code.
 
-     ```powershell
+    ```powershell
     $secretvalue = ConvertTo-SecureString 'Pa55w.rd1234' -AsPlainText -Force
-     ```
+    ```
 
 
 2.  Next add the secret to the Vault with this command. Be sure to change the placeholder text to your vault name.
 
-     ```powershell
+    ```powershell
     $secret = Set-AZKeyVaultSecret -VaultName 'YourVaultName' -Name 'SQLPassword' -SecretValue $secretvalue
-     ```
+    ```
 
 3.  Move back to the Azure Portal on **KeyVaultPS** and click **Secrets**
 
@@ -130,9 +130,9 @@ In this exercise, you will use PowerShell to create an Azure Key Vault.
 
 8.  To view the Secret, use the Get-AzureKeyVaultSecret cmdlet. Be sure to change the placeholder text to your vault name.
 
-     ```powershell
+    ```powershell
     Get-AZKeyVaultSecret -VaultName 'YourVaultName'
-     ```
+    ```
 
 ### Task 5: Enable a Client Application
 
@@ -183,21 +183,21 @@ You will enable your client application to access the Azure SQL Database service
 8.  Run the following Powershell in the **Powershell ISE** to set the sqlApp key permissions replacing the placeholder text with **your account details**
 
     
-     ```powershell
+    ```powershell
     $subscriptionName = '[Azure_Subscription_Name]'
     $applicationId = '[Azure_AD_Application_ID]'
     $resourceGroupName = '[Resource_Group_with_KeyVault]'
     $location = '[Azure_Region_of_KeyVault]'
     $vaultName = '[KeyVault_Name]' 
-     ```
+    ```
     
-     ```powershell
+    ```powershell
     Login-AzAccount
-     ```
+    ```
     
-     ```powershell
+    ```powershell
     Set-AZKeyVaultAccessPolicy -VaultName $vaultName -ResourceGroupName $resourceGroupName -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
-     ```
+    ```
 
 
  
@@ -274,31 +274,29 @@ In this task, you will create a blank Azure SQL Database, connect to it with SQL
 2.  Paste the following code into the query window and click Execute
 
      ```sql
-    CREATE TABLE [dbo].[Patients](
+     CREATE TABLE [dbo].[Patients](
     
-        [PatientId] [int] IDENTITY(1,1),
+     [PatientId] [int] IDENTITY(1,1),
 
-        [SSN] [char](11) NOT NULL,
+     [SSN] [char](11) NOT NULL,
 
-        [FirstName] [nvarchar](50) NULL,
+     [FirstName] [nvarchar](50) NULL,
 
-        [LastName] [nvarchar](50) NULL,
+     [LastName] [nvarchar](50) NULL,
 
-        [MiddleName] [nvarchar](50) NULL,
+     [MiddleName] [nvarchar](50) NULL,
 
-        [StreetAddress] [nvarchar](50) NULL,
+     [StreetAddress] [nvarchar](50) NULL,
 
-        [City] [nvarchar](50) NULL,
+     [City] [nvarchar](50) NULL,
 
-        [ZipCode] [char](5) NULL,
+     [ZipCode] [char](5) NULL,
 
-        [State] [char](2) NULL,
+     [State] [char](2) NULL,
 
-        [BirthDate] [date] NOT NULL 
+     [BirthDate] [date] NOT NULL 
 
-        PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
-
-
+     PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
      ```
 
 
@@ -343,13 +341,13 @@ In this task, you will create a blank Azure SQL Database, connect to it with SQL
 
 7.  Install the following **NuGet** packages by going to **Tools** > **NuGet Package Manager** > **Package Manager Console.**
 
-     ```powershell
+    ```powershell
     Install-Package     Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider
-     ```
+    ```
 
-     ```powershell
+    ```powershell
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
-     ```
+    ```
 
 1.  Open the **program.cs** file in notepad from Allfiles\\Labs\\Mod1_Lab02 and copy the code.
 
@@ -370,16 +368,16 @@ In this task, you will create a blank Azure SQL Database, connect to it with SQL
 
 1.  Run the following query to see the data that was loaded into the database is encrypted.
 
-     ```sql
+    ```sql
     SELECT FirstName, LastName, SSN, BirthDate FROM Patients;
-     ```
+    ```
 
 
 1.  Now, move back to the console application you will be asked to **Enter** a **Valid SSN**. This will query the encrypted column for the data. Notice that with the key called from the Key Vault now the data is unencrypted and shown to the console window.
 
-     ```sql
+    ```sql
     999-99-0003
-     ```
+    ```
 
 1.  To **Exit** you press enter.
 

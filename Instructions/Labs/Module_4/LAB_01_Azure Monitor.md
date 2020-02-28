@@ -21,13 +21,13 @@ Azure Monitor can collect data directly from your Azure virtual machines into a 
 
 1.  Open the Azure Cloud Shell and run the following two commands to create a Resource Group and Azure VM that you will use to monitor:
 
-     ```powershell
+    ```powershell
     New-AzResourceGroup -Name myResourceGroup -Location EastUS
-     ```
+    ```
 
-     ```powershell
+    ```powershell
     New-AzVm -ResourceGroupName "myResourceGroup" -Name "myVM" -Location "East  US" -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -SecurityGroupName   "myNetworkSecurityGroup" -PublicIpAddressName "myPublicIpAddress"     -OpenPorts 80,3389
-     ```
+    ```
 
 1.  When prompted for credentials enter **LocalAdmin** as the User and use the password **Pa55w.rd1234**
 
@@ -109,7 +109,7 @@ Now that you have enabled data collection, lets run a simple log search example 
 
 1.  In the selected workspace, from the left-hand pane, select **Logs**.
 
-2.  On the Logs query page, type `Perf` in the query editor and select **Run**.
+2.  Click Get started.  On the Logs query page, type `Perf` in the query editor and select **Run**.
 
        ![Screenshot](../Media/Module-4/556c7fd3-bb7b-4c21-af88-6a5e7a6f6964.png)
 
@@ -141,7 +141,7 @@ Application Insights can gather telemetry data from any internet-connected appli
    | **Resource Group**     | myResourceGroup |
    | **Location** | East US |
 
-2.  Click **Create**.
+2.  Click **Add**.
 
 ### Task 2: Create an HTML file
 
@@ -188,7 +188,7 @@ Application Insights can gather telemetry data from any internet-connected appli
 
 1.  You can now reopen the Application Insights **Overview** page in the Azure portal, where you retrieved your instrumentation key, to view details about your currently running application. The four default charts on the overview page are scoped to server-side application data. Since we are instrumenting the client/browser-side interactions with the JavaScript SDK this particular view doesn't apply unless we also have a server-side SDK installed.
 
-2.  Click on **Logs**.  This opens **Logs**, which provides a rich query language for analyzing all data collected by Application Insights. To view data related to the client-side browser requests run the  following query:
+2.  Click on **Logs (Analytics)**.  This opens **Logs**, which provides a rich query language for analyzing all data collected by Application Insights. To view data related to the client-side browser requests run the following query:
 
     ```json
     // average pageView duration by name

@@ -108,9 +108,9 @@ We will now download the scripts that will be used to create some events to be s
 
 1.  Open **PowerShell as administrator** (right click on the PowerShell icaon) and run the following command
 
-     ```powershell
+    ```powershell
     install-script get-blobevents, send-blobevents
-     ```
+    ```
 
 **Note**: If prompted confirm the installation. The script files have now been downloaded and are available for use in PowerShell
 
@@ -125,9 +125,9 @@ For this section you will need the primary key copied from the portal erlier
 
 2.  Run the following command 
 
-     ```powershell
+    ```powershell
     send-blobevents
-     ```
+    ```
 
 3.  This command will prompt you to enter the following data:
 
