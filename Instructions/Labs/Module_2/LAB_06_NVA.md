@@ -136,7 +136,7 @@ NVAs are VMs that help with network functions like routing and firewall optimiza
     | Password | Pa55w.rd1234|
     | Confirm Password | Reenter password. |
     | **INBOUND PORT RULES** |  |
-    | Public inbound ports | Leave the default **None**.
+    | Public inbound ports | Select **None**.
     | **SAVE MONEY** |  |
     | Already have a Windows license? | Leave the default **No**. |
 
@@ -162,7 +162,7 @@ NVAs are VMs that help with network functions like routing and firewall optimiza
 
     | Setting | Value |
     | ------- | ----- |
-    | Name | Enter *mynvastorageaccount*. |
+    | Name | Enter *a unique storage account name*. |
     | Account kind | Leave the default **Storage (general purpose v1)**. |
     | Performance | Leave the default **Standard**. |
     | Replication | Leave the default **Locally-redundant storage (LRS)**.
@@ -212,7 +212,7 @@ Create a public VM and a private VM in the virtual network. Later, you'll use th
 | Public inbound ports | Select **Allow selected ports**. |
 | Select inbound ports | Select **HTTP** and **RDP**. |
 | MANAGEMENT | |
-| Diagnostics storage account | Leave the default **mynvastorageaccount**. |
+| Diagnostics storage account | Leave the default. |
 | **PRIVATE VM** | |
 | BASICS |  |
 | Virtual machine name | Enter *myVmPrivate*. |
@@ -222,7 +222,7 @@ Create a public VM and a private VM in the virtual network. Later, you'll use th
 | Public inbound ports | Select **Allow selected ports**. |
 | Select inbound ports | Select **HTTP** and **RDP**. |
 | MANAGEMENT | |
-| Diagnostics storage account | Leave the default **mynvastorageaccount**. |
+| Diagnostics storage account | Leave the default. |
 
 You can create the *myVmPrivate* VM while Azure creates the *myVmPublic* VM. Don't continue with the rest of the steps until Azure finishes creating both VMs.
 
