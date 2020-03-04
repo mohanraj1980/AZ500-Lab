@@ -81,7 +81,7 @@ In addition to scale based on CPU, you can set your scale differently for specif
 
 1.  Whenever your resource is scaled up or down, an event is logged in the activity log. You can view the scale history of your resource for the past 24 hours by switching to the **Run history** tab.
 
-1.  If you want to view the complete scale history (for up to 90 days), select **Click here to see more details**. The activity log opens, with Autoscale pre-selected for your resource and category.
+1.  If you want to view the complete scale history (for up to 90 days), select **View more details in the Activity Log**. The activity log opens, with Autoscale pre-selected for your resource and category.
 
 ## Exercise 6: View the scale definition of your resource
 
