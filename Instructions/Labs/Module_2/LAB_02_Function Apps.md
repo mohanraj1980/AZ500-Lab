@@ -27,7 +27,7 @@ Azure Function Apps uses the Azure App Service infrastructure. This topic shows 
 1.  Select the resource group you created in the lab setup
 
 1.  Select the function app service that has been created in the resource group
-warning
+
 **Note**: There are no functions currently assgined to the function app
 
 
@@ -36,8 +36,8 @@ warning
 1.  Click **New Function**,
 
 1.  In the top right click the slide button for **Experimental Language support**,
-warning
-**Note**: that other languages have now been added to the triggers
+
+**Note**: New languages have now been added to the triggers
 
 
 1.  Select **HTTP trigger**.
@@ -50,7 +50,7 @@ warning
 
 1.  Click **Create**.
 
- You have now created template PS1 HTTP trigger, if the template code does not show refresh the page 
+ You have now created template PS1 HTTP trigger. If the template code does not appear, refresh the page 
 
 ### Task 3: Test a REST call to the HTTP trigger
 
@@ -58,14 +58,14 @@ warning
 
 1.  Under the **HTTP trigger** function click **Manage**.
 
-1.  Under funtion keys select **copy** under actions on the default function key and keep this in a notepad file
+1.  Under funtion keys select **copy** under actions on the default function key and paste this in a notepad file
 
 1.  Navigate to the following URL and copy the PowerShell code
      ```cli
     https://github.com/GoDeploy/AZ500/blob/master/AZ500%20Mod2%20Lab%202/RESTgetHTTPtrigger.ps1
      ```
 
-1.  Open a **PowerShell ISE** window and and paste the PowerShell code from the following **URL**
+1.  Open a **PowerShell ISE** window and and paste the PowerShell code from the previous **URL**
 
 1.  Populate the variable `$functionappname = ""` with the name of your function app
 
