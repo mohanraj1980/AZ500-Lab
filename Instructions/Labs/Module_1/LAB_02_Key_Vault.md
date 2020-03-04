@@ -43,10 +43,10 @@ In this exercise, you will use PowerShell to create an Azure Key Vault.
     ```
 
 
-5.  Create a key vault in the resource group. **The VaultName must be unique.**
+5.  Create a key vault in the resource group. **The VaultName must be unique therefore change <keyvault name> to somethign unique.**
 
     ```powershell
-    New-AzKeyVault -VaultName 'KeyVaultPS' -ResourceGroupName    'KeyVaultPSRG' -Location 'eastus'
+    New-AzKeyVault -VaultName '<keyvault name>' -ResourceGroupName 'KeyVaultPSRG' -Location 'eastus'
     ```
 
     **Note**: The output of this shows important pieces of information: Vault Name in this case that is KeyVaultPS and the Vault URI: `https://KeyVaultPS.vault.azure.net`
