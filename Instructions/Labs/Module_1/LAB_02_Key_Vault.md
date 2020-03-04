@@ -61,7 +61,7 @@ In this exercise, you will use PowerShell to create an Azure Key Vault.
 
 9. Select **Key, Secret and Certificate Management** from **Configure from template (optional)**
 
-10. Click **Select Pricipal** and search for and then click on your account, then click on **Select**
+10. Click **Select Principal** and search for and then click on your account, then click on **Select**
 
 11. Click **Add** and then **Save**
 
@@ -358,7 +358,7 @@ In this task, you will create a blank Azure SQL Database, connect to it with SQL
 10.  **Click** the **Start Button** in **Visual Studio**.
 
 
-1.  **The Console Application** will **Build** and then start. First it will add data to the application and then ask for your password.
+1.  **The Console Application** will **Build** and then start. First it will ask for your password, then the app will add data to the database.
 
     - Server Password: **Pa55w.rd1234**
 
@@ -373,7 +373,7 @@ In this task, you will create a blank Azure SQL Database, connect to it with SQL
     ```
 
 
-1.  Now, move back to the console application you will be asked to **Enter** a **Valid SSN**. This will query the encrypted column for the data. Notice that with the key called from the Key Vault now the data is unencrypted and shown to the console window.
+1.  Now, move back to the console application where you will be asked to **Enter** a **Valid SSN**. This will query the encrypted column for the data. Notice that with the key called from the Key Vault, now the data is unencrypted and shown to the console window.
 
     ```sql
     999-99-0003
