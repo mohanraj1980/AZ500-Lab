@@ -324,7 +324,7 @@ Azure Security Center will recommend that you provide security contact details f
 ## Exercise 3: Create an Azure storage accounts baseline 
 
 
-An Azure storage account provides a unique namespace to store and access your Azure Storage data objects.  Storage Accounts also need to secured.
+An Azure storage account provides a unique namespace to store and access your Azure Storage data objects.  Storage Accounts also need to be secured.
 
 
 ### Task 1: Require security-enhanced transfers
