@@ -90,7 +90,7 @@ Azure Monitor can collect events from the Windows event logs or Linux Syslog and
 
 5.  Select **Save** at the top of the page to save the configuration.
 
-6.  Select **Windows Performance Data** to enable collection of performance counters on a Windows computer.
+6.  Select **Windows Performance Counters** to enable collection of performance counters on a Windows computer.
 
 7.  When you first configure Windows Performance counters for a new Log Analytics workspace, you are given the option to quickly create several common counters. They are listed with a checkbox next to each.
 
