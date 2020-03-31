@@ -240,7 +240,7 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 
 5.  Check that **System updates should be installed on your machines** is one of the policies.
 
-6.  Click the Enable Monitoring in Azure Security Center link (This may also be displayed as ASC Default witha GUID).
+6.  Click the Enable Monitoring in Azure Security Center link (This may also be displayed as ASC Default with a GUID).
 
        ![Screenshot](../Media/Module-4/c0372885-0568-4a60-bf67-a5dfea2a5010.png)
 
