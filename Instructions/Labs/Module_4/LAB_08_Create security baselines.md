@@ -91,7 +91,7 @@ Remember Multi-Factor Authentication feature for devices and browsers that are t
 
 4.  Select **Abi Skinner**, then click **Manage users settings**.
 
-5.  Ensure that **Restore multi-factoe authentication on all remembered devices** is Selected then click **Save**.
+5.  Ensure that **Restore multi-factor authentication on all remembered devices** is Selected then click **Save**.
 
        ![Screenshot](../Media/Module-4/73dabcbb-b9ff-40b1-9760-9ee748e1a849.png)
 
