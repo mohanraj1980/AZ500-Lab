@@ -59,7 +59,7 @@ Bastion provides secure RDP and SSH connectivity to all VMs in the virtual netwo
 1.  On the **Create a bastion** page, configure a new Bastion resource. Specify the configuration settings below.
 
     * **Subscription**: Select your Subscription
-    * **Resource Group**: myResourceGruop
+    * **Resource Group**: myResourceGroup
     * **Name**: Bastion
     * **Region**: East US
     * **Virtual network**: **myVnet**
