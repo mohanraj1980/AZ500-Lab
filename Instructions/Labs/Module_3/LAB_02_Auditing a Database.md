@@ -20,7 +20,7 @@
 warning
 **Note**: You must wait for the SQL database with the test data to deploy
 
-### Task 2: Enable auditing on your databasease
+### Task 2: Enable auditing on your database
 
 1.  Select your resource group created in the lab setup
 
@@ -38,7 +38,7 @@ warning
 
 8.  **Click Create New**.
 
-9.  Name the storage account **mod4lab2yourname** ensuring you replace **yourname** with a unique name using lowercase letters
+9.  Name the storage account **mod3lab2yourname** ensuring you replace **yourname** with a unique name using lowercase letters
 
 10. **Click OK**.
 
@@ -56,15 +56,15 @@ warning
 
 1.  **Under Security**, select **Auditing**
   
-    **Note**: that the Auditing looks off here but it is set on the underlying server level so it is turned on for this database
+    **Note**: The Auditing looks off here but it is set on the underlying server level so it is turned on for this database
 
 
-1.  Click **View Audit Log**.
+1.  Click **View Audit Logs**.
 
-  **Note**: Here you will review the output of the audit logs of the Db including any attempted SQL injections, since this is a test database that has been created not log ago the will be minimal audits if any in the log at the current time.
+  **Note**: Here you will review the output of the audit logs of the database including any attempted SQL injections. Since this is a test database created recently, there will be minimal audits if any in the log at the current time.
 
   If server auditing is enabled, the database-configured audit will exist side-by-side with the server audit.
-Notice that you can select for audit logs to be written to an Azure storage account, to a Log Analytics workspace for consumption by Azure Monitor logs, or to event hub for consumption using an event hub. You can configure any combination of these options, and audit logs will be written to each.
+Notice that you can select for audit logs to be written to an Azure storage account, to a Log Analytics workspace for consumption by Azure Monitor logs, or to Event Hub for consumption using an event hub. You can configure any combination of these options, and audit logs will be written to each.
 
 
 
