@@ -191,16 +191,16 @@ In this task you will test the firewall to confirm that it works as expected.
 
 2.  Connect to the **Srv-Jump** virtual machine using RDP, and from there open a remote desktop connection to the **Srv-Work** private IP address.
 
-	-	**Username**: localadmin
+    -	**Username**: localadmin
     -	**Password**: Pa55w.rd1234
-</br>
+
 3.  Open Internet Explorer and browse to **`https://www.msn.com`**
 
 4.  Click **OK** > **Close** on the security alerts.
 
    You should see the MSN home page.
 
-5.  Browse to **`https://www.msn.com`**
+5.  Browse to **`https://msn.com`**
 
        - You should be blocked by the firewall.
        - So now you've verified that the firewall rules are working:
