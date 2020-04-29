@@ -62,7 +62,8 @@ Create two VMs in the virtual network:
     | Password | Pa55w.rd1234 |
     | Confirm Password | Reenter password. |
     | **INBOUND PORT RULES** |  |
-    | Public inbound ports | Select **None**. |
+    | Public inbound ports | Select **Allow selected ports**. |
+    | Select inbound ports | Select **HTTP** and **RDP**.
     | **SAVE MONEY** |  |
     | Already have a Windows license? | Leave the default **No**. |
 
@@ -77,8 +78,7 @@ Create two VMs in the virtual network:
     | Virtual network | Leave the default **myVirtualNetwork**. |
     | Subnet | Leave the default **myVirtualSubnet (10.1.0.0/24)**. |
     | Public IP | Leave the default **(new) myVm1-ip**. |
-    | Public inbound ports | Select **Allow selected ports**. |
-    | Select inbound ports | Select **HTTP** and **RDP**.
+   
 
 1.  Select **Next : Management**.
 
