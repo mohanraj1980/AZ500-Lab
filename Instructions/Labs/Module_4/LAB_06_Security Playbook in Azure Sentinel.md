@@ -27,15 +27,17 @@ Follow these steps to create a new security playbook in Azure Sentinel:
 
    ![Screenshot](../Media/Module-4/playbook-template.png)
 
-6. You are taken to the Logic App Designer where you can either build new or edit the template. For more information on creating a playbook with Logic Apps].
+6. You are taken to the Logic App Designer where you can either build new or edit the template.
 
 7. If you are creating a blank playbook, in the **Search all connectors and triggers** field, type *Azure Sentinel*, and select **When a response to an Azure Sentinel alert is triggered**. 
+
+**Note**: You may be required to re-authenticate. If so, click **Sign in** and authenticate with your Azure credentials.
    
-   After it is created, the new playbook appears in the **Playbooks** list. If it doesn’t appear, click **Refresh**.
+8. Click **Save** and return to the Azure Sentinel blade.  After it is created, the new playbook appears in the **Playbooks** list. If it doesn’t appear, click **Refresh**.
 
-8.  Use the **Get entities** functions, which enable you to get the relevant entities from inside the **Entities** list, such as accounts, IP addresses and hosts. This will enable you to run actions on specific entities.
+9.  Use the **Get entities** functions, which enable you to get the relevant entities from inside the **Entities** list, such as accounts, IP addresses and hosts. This will enable you to run actions on specific entities.
 
-9.  Now you can define what happens when you trigger the playbook. You can add an action, logical condition, switch case conditions, or loops.
+10.  Now you can define what happens when you trigger the playbook. You can add an action, logical condition, switch case conditions, or loops.
 
     !![Screenshot](../Media/Module-4/logic-app.png)
 
