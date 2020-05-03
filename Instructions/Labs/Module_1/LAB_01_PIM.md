@@ -360,13 +360,16 @@ You can customize some of the security alerts in PIM to work with your environme
 
 1.  Click **Azure AD roles**.
 
-1.  Click **Settings** 
-
 1.  Click **Roles** and select **Global Administrator**.
 
-1.  Scroll down and select **Require Approval** and  select your account as the approver then click **Update**.
+1.  Click on **Role settings**.
 
-     ![Screenshot](../Media/Module-1/2020-02-24_15-14-41.png)
+1.  On the **Role setting** blade, click on **Edit**.
+
+1.  Scroll down and select **Require Approval** and  select your account as the approver then click **Select**.
+
+1.  On the **Edit role setting – Global Administrator blade**, click **Update**.
+
 
 ### Task 2: Enable Isabella for Global Administrator privileges.
 
@@ -378,10 +381,9 @@ You can customize some of the security alerts in PIM to work with your environme
 
      ![Screenshot](../Media/Module-1/ae3755ac-bd82-4e70-a102-ccbfc3aee48f.png)
 
-1.  Select **Global Administrator** and click **Edit**.
+1.  Select **Global Administrator** and click **+ Add assignments**.
 
-
-1.  Select **+ Add Member** and select **Isabella**.
+1.  On the **Add assignments** blade, under **Select member(s) *** click **No member selected**, select **Isabella** and click **Select** > **Next** and then **Assign**.
 
 
 1.  Open an in Private Browsing session and login to portal.azure.com as Isabella.
