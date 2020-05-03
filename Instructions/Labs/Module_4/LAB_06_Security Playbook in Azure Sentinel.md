@@ -39,7 +39,7 @@ Follow these steps to create a new security playbook in Azure Sentinel:
 
 10.  Now you can define what happens when you trigger the playbook. You can add an action, logical condition, switch case conditions, or loops.
 
-    !![Screenshot](../Media/Module-4/logic-app.png)
+    ![Screenshot](../Media/Module-4/logic-app.png)
 
 ### Task 2: How to run a security playbook
 
