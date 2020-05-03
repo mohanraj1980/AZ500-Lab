@@ -370,6 +370,8 @@ You can customize some of the security alerts in PIM to work with your environme
 
 1.  On the **Edit role setting – Global Administrator blade**, click **Update**.
 
+  ![Screenshot](../Media/Module-1/2020-02-24_15-14-41.png)
+
 
 ### Task 2: Enable Isabella for Global Administrator privileges.
 
