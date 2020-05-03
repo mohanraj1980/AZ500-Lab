@@ -31,7 +31,7 @@ Follow these steps to create a new security playbook in Azure Sentinel:
 
 7. If you are creating a blank playbook, in the **Search all connectors and triggers** field, type *Azure Sentinel*, and select **When a response to an Azure Sentinel alert is triggered**. 
 
-**Note**: You may be required to re-authenticate. If so, click **Sign in** and authenticate with your Azure credentials.
+   **Note**: You may be required to re-authenticate. If so, click **Sign in** and authenticate with your Azure credentials.
    
 8. Click **Save** and return to the Azure Sentinel blade.  After it is created, the new playbook appears in the **Playbooks** list. If it doesn’t appear, click **Refresh**.
 
