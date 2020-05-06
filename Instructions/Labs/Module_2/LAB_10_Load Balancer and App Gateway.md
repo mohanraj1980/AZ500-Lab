@@ -199,7 +199,7 @@ This template allows you to create 2 Virtual Machines under a Load balancer and 
 
 1.  Click **Deploy to Azure**
 
-     ![Screenshot](../Media/Module-2/2c12a035-65aa-41e9-ad41-59a955a5432f.png)
+     ![Screenshot](../Media/Module-2/81169024-6590a280-8f98-11ea-8688-c4bb5f4fc479.png)
 
 1.  On the template blade that opens, enter the following details:
 
