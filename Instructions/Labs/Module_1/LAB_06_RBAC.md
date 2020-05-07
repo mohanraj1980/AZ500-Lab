@@ -52,7 +52,7 @@ In this module, you'll learn about Role-Based Access Control as the foundation t
     $PasswordProfile.Password = "Pa55w.rd"
     ```
     ```powershell
-    New-AzureADUser -DisplayName "Mark" -PasswordProfile $PasswordProfile     -UserPrincipalName "Mark@yourdomain.onmicrosoft.com" -    AccountEnabled $true -MailNickName "Mark"
+    New-AzureADUser -DisplayName "Mark" -PasswordProfile $PasswordProfile     -UserPrincipalName "Mark@yourdomain.onmicrosoft.com" -AccountEnabled $true -MailNickName "Mark"
     ```
  
      ![Screenshot](../Media/Module-1/d5e26f07-a18e-4ae4-84aa-318eac3d5b5b.png)
