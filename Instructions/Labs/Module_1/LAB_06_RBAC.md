@@ -45,23 +45,23 @@ In this module, you'll learn about Role-Based Access Control as the foundation t
   
 8.  **Enter the following commands** to create a user in the PS cloud shell **replacing yourdomain** with your domain noted down erlier
 
-      ```powershell
-      $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-      ```
-      ```powershell
-      $PasswordProfile.Password = "Pa55w.rd"
-      ```
-      ```powershell
-      New-AzureADUser -DisplayName "Mark" -PasswordProfile $PasswordProfile     -UserPrincipalName "Mark@yourdomain.onmicrosoft.com" -AccountEnabled $true -MailNickName "Mark"
-      ```
+    ```powershell
+    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+    ```
+    ```powershell
+    $PasswordProfile.Password = "Pa55w.rd"
+    ```
+    ```powershell
+    New-AzureADUser -DisplayName "Mark" -PasswordProfile $PasswordProfile     -UserPrincipalName "Mark@yourdomain.onmicrosoft.com" -    AccountEnabled $true -MailNickName "Mark"
+    ```
  
      ![Screenshot](../Media/Module-1/d5e26f07-a18e-4ae4-84aa-318eac3d5b5b.png)
 
 9.  Run the following comamand to get a list of the users in Azure AD 
 
-      ```powershell
-      Get-AzureADUser 
-      ```
+    ```powershell
+    Get-AzureADUser 
+    ```
  
 10.  Change the Azure cloud shell to azure CLI mode with Bash by using the drop down menu
 
@@ -69,9 +69,9 @@ In this module, you'll learn about Role-Based Access Control as the foundation t
 
 11.  Enter the following command in **azure CLI** to create a user in Azure CLI **replacing yourdomain** with the domain you noted earlier.
  
-      ```cli
-      az ad user create --display-name Tracy --password Pa55w.rd --user-principal-name Tracy@yourdomain.onmicrosoft.com
-      ```
+    ```cli
+    az ad user create --display-name Tracy --password Pa55w.rd --user-principal-name Tracy@yourdomain.onmicrosoft.com
+    ```
 
 
 You should now have 3 users in your Azure AD
@@ -94,15 +94,15 @@ You should now have 3 users in your Azure AD
 
 19.  In the **Cloud Shell** enter the following command:
 
-      ```cli
-      az ad group create --display-name ServiceDesk --mail-nickname ServiceDesk
-      ```
+    ```cli
+    az ad group create --display-name ServiceDesk --mail-nickname ServiceDesk
+    ```
 
 20.  Change the Cloud Shell to **PowerShell** and enter the following command:
 
-      ```powershell
-      New-AzureADGroup -DisplayName "Junior Admins" -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
-      ```
+    ```powershell
+    New-AzureADGroup -DisplayName "Junior Admins" -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
+    ```
  
 1.  Exit the **Cloud Shell**.
 
@@ -190,41 +190,41 @@ To grant access for the user, you use the New-AzRoleAssignment command to assign
   
 1.  Get the ID of your subscription using the **`Get-AzSubscription`** command.
   
-      ```powershell
-      Get-AzSubscription
-      ```
+    ```powershell
+    Get-AzSubscription
+    ```
 
   
 1.  Save the subscription scope in a variable replacing the 000000's with your subscription ID.
   
-      ```powershell
-      $subScope = "/subscriptions/00000000-0000-0000-0000-000000000000" 
-      ```  
+    ```powershell
+    $subScope = "/subscriptions/00000000-0000-0000-0000-000000000000" 
+    ```  
   
 
   
 1.  Assign the Reader role to the user at the subscription scope by using the following command (replacing your domain with the tenant domain you noted earlier):
   
-      ```powershell
-      New-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Reader" -Scope $subScope  
-      ```
+    ```powershell
+    New-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Reader" -Scope $subScope  
+    ```
   
       ![Screenshot](../Media/Module-1/f468a5df-aab2-42db-9e28-7ea25a2262ca.png)
   
 1.  Assign the Contributor role to the user at the resource group scope using the following command:
   
-      ```powershell
-      New-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Contributor" -ResourceGroupName "myRBACrg"
-      ```
+    ```powershell
+    New-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -RoleDefinitionName "Contributor" -ResourceGroupName "myRBACrg"
+    ```
 
   
 ### Task 2: List access  
   
 1.  To verify the access for the subscription, use the Get-AzRoleAssignment command to list the role assignments use the following command:
   
-      ```powershell
-      Get-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -Scope $subScope
-      ```
+    ```powershell
+    Get-AzRoleAssignment -SignInName bill@yourdomain.onmicrosoft.com -Scope $subScope
+    ```
 
        ![Screenshot](../Media/Module-1/d190e8c5-ffc7-4638-ad7e-cc2643b972a0.png)
 
