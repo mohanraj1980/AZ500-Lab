@@ -273,31 +273,31 @@ In this task, you will create a blank Azure SQL Database, connect to it with SQL
 
 2.  Paste the following code into the query window and click Execute
 
-     ```sql
-     CREATE TABLE [dbo].[Patients](
-    
-     [PatientId] [int] IDENTITY(1,1),
+```sql
+CREATE TABLE [dbo].[Patients](
 
-     [SSN] [char](11) NOT NULL,
+[PatientId] [int] IDENTITY(1,1),
 
-     [FirstName] [nvarchar](50) NULL,
+[SSN] [char](11) NOT NULL,
 
-     [LastName] [nvarchar](50) NULL,
+[FirstName] [nvarchar](50) NULL,
 
-     [MiddleName] [nvarchar](50) NULL,
+[LastName] [nvarchar](50) NULL,
 
-     [StreetAddress] [nvarchar](50) NULL,
+[MiddleName] [nvarchar](50) NULL,
 
-     [City] [nvarchar](50) NULL,
+[StreetAddress] [nvarchar](50) NULL,
 
-     [ZipCode] [char](5) NULL,
+[City] [nvarchar](50) NULL,
 
-     [State] [char](2) NULL,
+[ZipCode] [char](5) NULL,
 
-     [BirthDate] [date] NOT NULL 
+[State] [char](2) NULL,
 
-     PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
-     ```
+[BirthDate] [date] NOT NULL 
+
+PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
+```
 
 
 3.  After the table is created successfully, expand **medical > tables > right-click dbo.Patients** and select **Encrypt Columns**.
