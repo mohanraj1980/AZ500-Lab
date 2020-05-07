@@ -10,7 +10,7 @@
 
     ```cli
     https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-500-Azure-Security%2Fmaster%2FAllfiles%2FLabs%2FMod3_Lab03%2Fazuredeploy.json
-     ```
+    ```
 
 1.  Under **Resource group** click create new and use the default name "**Mod3Lab3**"
 
@@ -68,13 +68,13 @@ warning
 
 ***Note*** Replace the section **{GlobalUniqueName}** with a globally unique name
 
-     ```powershell
+    ```powershell
     New-AzEventHubNamespace -ResourceGroupName Mod3Lab3  -NamespaceName {GlobalUniqueName} -Location eastus
-     ```
+    ```
 
-     ```powershell
+    ```powershell
     New-AzEventHub -ResourceGroupName Mod3Lab3 -NamespaceName {GlobalUniqueName}  -EventHubName Mod3Lab3 -MessageRetentionInDays 3
-     ```
+    ```
 
 1.  When these commands have completed click **configure under event hubs**
 
@@ -102,9 +102,9 @@ warning
 
 2.  In the query space enter the following code and **click Run**.
 
-     ```cli
+    ```cli
     Event | where Source  == "MSSQLSERVER" 
-     ```
+    ```
 
 3.  You will not see any results, please read the below warning
 warning
@@ -117,22 +117,22 @@ warning
 
 1.  In the query space enter the following code and **click Run**.
 
-     ```cli
+    ```cli
     Event | where Source  == "MSSQLSERVER" 
-     ```
+    ```
 
 1.  From here you can expand some of the example audit logs to view what they would look like in a live system
 
 1.  In the query space enter the following code and **Click Run**.
 
-     ```cli
+    ```cli
     Event 
     | where EventLevelName == "Error" 
     | where TimeGenerated > ago(1d) 
     | where Source != "HealthService" 
     | where Source != "Microsoft-Windows-DistributedCOM" 
     | summarize count() by Source
-     ```
+    ```
 
 1.  **Click chart**
 
