@@ -16,13 +16,13 @@ Bastion provides secure RDP and SSH connectivity to all VMs in the virtual netwo
 
 1.  Run the following 2 commands to create a Resource Group and Virtual Machine and VNet to test the Azure Bastion service.
 
-     ```powershell
+    ```powershell
     New-AzResourceGroup -Name myResourceGroup -Location "East US"
-     ```
+    ```
     
-     ```powershell
+    ```powershell
     New-AzVm -ResourceGroupName "myResourceGroup" -Name "myVM" -Location "East  US" -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -SecurityGroupName   "myNetworkSecurityGroup" -OpenPorts 80,3389
-     ```
+    ```
 
     **Note**: The VM is being created without a Public IP Address.
 

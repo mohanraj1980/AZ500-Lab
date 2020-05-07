@@ -224,19 +224,19 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 5.  You may receive a certificate warning during the sign-in process. If you receive the warning, select **Yes** or **Continue** to proceed with the connection.
 6.  On the *myVmPrivate* VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace `<storage-account-key>` and `<storage-account-name>` with values you supplied and retrieved in the **Create a storage account** task.
 
-       ```powershell
+    ```powershell
        $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
        $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
        New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\my-file-share"  -Credential $credential
-       ```
+    ```
 
      The Azure file share successfully mapped to the Z drive.
 
 7.  Confirm that the VM has no outbound connectivity to the internet from a command prompt:
 
-       ```
+    ```
        ping bing.com
-       ```
+    ```
 
     You receive no replies because the network security group associated to the *Private* subnet does not allow outbound access to the internet.
 

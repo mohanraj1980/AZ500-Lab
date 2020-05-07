@@ -88,9 +88,9 @@ In this section, you create a public load balancer that helps load balance virtu
 3.  Log into the VM with username *localadmin*.
 4.  Open PowerShell and run the following command to install IIS.
 
-     ```powershell
+    ```powershell
     Install-WindowsFeature Web-Server
-     ```
+    ```
 
 7.  Repeat steps 1 to 4 for the virtual machine *myVM2*.
 

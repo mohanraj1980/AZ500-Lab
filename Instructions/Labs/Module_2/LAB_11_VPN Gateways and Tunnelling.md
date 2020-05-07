@@ -11,9 +11,9 @@ In this task you will create a Sophos XG Virtual Appliance which will emulate an
 
 1.  In your browser, navigate to the following URL to open the ARM template:
 
-     ```cli
+    ```cli
     https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGoDeploy%2FAZ300%2Fmaster%2Fxg-azure-master%2FmainTemplate.json
-     ```
+    ```
  
 2.  Login to the portal if required.
 

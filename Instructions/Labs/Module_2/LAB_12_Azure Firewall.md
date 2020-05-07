@@ -18,9 +18,9 @@ Network traffic is subjected to the configured firewall rules when you route you
 
 1.  In your browser, navigate to the following URL to open the ARM template:
 
-     ```cli
+    ```cli
     https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGoDeploy%2FAZ500%2Fmaster%2FAZ500%20Mod2%20Lab%207%2Ftemplate.json
-     ```
+    ```
  
 2.  Click **Create new** under the Resource Group and use the resource group name of **Test-FW-RG**  
 
