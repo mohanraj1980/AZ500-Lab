@@ -10,7 +10,7 @@
 
     ```cli
     https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-500-Azure-Security%2Fmaster%2FAllfiles%2FLabs%2FMod3_Lab02%2Fazuredeploy.json 
-     ```
+    ```
 
 1.  **Under Resource** group click create new and use the default name "**Mod3Lab2**"
 

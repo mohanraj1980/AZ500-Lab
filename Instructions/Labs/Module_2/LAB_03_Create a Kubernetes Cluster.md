@@ -17,23 +17,23 @@ Azure Kubernetes Service (AKS) is a managed Kubernetes service that lets you qui
 
 1.  Run the following command in the **Cloud Shell** to create a new **Resource Group.**
 
-     ```cli
+    ```cli
     az group create --name myResourceGroup --location eastus
-     ```
+    ```
 
      **Note**: If you receive an error regarding the ```Microsoft.Network``` resource provider not being registered then run the following command and rerun the command in Step 4. Otherwise continue to Task 2.
      
-     ```cli
-     az provider register --namespace 'Microsoft.Network'
-     ```
+    ```cli
+    az provider register --namespace 'Microsoft.Network'
+    ```
 
 ### Task 2: Create the AKS Cluster in CLI
 
 1.  Run the following command in the **CloudShell**.
 
-     ```cli
+    ```cli
     az aks create  --resource-group myResourceGroup --name myAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys
-     ```
+    ```
  
 2.  After a few minutes, the command completes and returns **JSON-formatted** information about the cluster.
 
@@ -49,9 +49,9 @@ To manage a Kubernetes cluster, you use kubectl, the Kubernetes command-line cli
 1.  To configure `kubectl` to connect to your **Kubernetes cluster**, use the az-aks-get-credentials command. This command downloads credentials and configures the **Kubernetes CLI** to use them.
 
 
-     ```azurecli-interactive
+    ```azurecli-interactive
     az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
-     ```
+    ```
 
 1.  To verify the connection to your cluster, use the kubectl-get command to return a list of the cluster nodes.
 
@@ -76,18 +76,18 @@ A Kubernetes manifest file defines a desired state for the cluster, such as what
 
 1.  Run the following command in the cloud shell, this will directly pull the yaml file needed from GitHub to deploy the AKS application
 
-     ```cli
+    ```cli
     kubectl apply -f https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab03/azure-vote.yaml
-     ```
+    ```
 
 2.  The following example output shows the **Deployments and Services** created successfully:
 
-     ```json
+    ```json
     deployment "azure-vote-back" created
     service "azure-vote-back" created
     deployment "azure-vote-front" created
     service "azure-vote-front" created
-     ```
+    ```
 
 **Note**: When the application runs, a Kubernetes service exposes the application front end to the internet. This process can take a few minutes to complete.
 
@@ -97,23 +97,23 @@ A Kubernetes manifest file defines a desired state for the cluster, such as what
 
 1.  To monitor progress, use the kubectl-get command with the `--watch` argument.
 
-     ```azurecli-interactive
+    ```azurecli-interactive
     kubectl get service azure-vote-front --watch
-     ```
+    ```
 
 1.  Initially the *EXTERNAL-IP* for the *azure-vote-front* service is shown as *pending*.
 
-     ```
+    ```
     NAME               TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)         AGE
     azure-vote-front   LoadBalancer   10.0.37.27   <pending>     80:30572/TCP    6s
-     ```
+    ```
 
 
 1.  When the *EXTERNAL-IP* address changes from *pending* to an actual public IP address, use `CTRL-C` to stop the `kubectl` watch process. The following example output shows a valid public IP address assigned to the service:
 
-     ```
+    ```
     azure-vote-front   LoadBalancer   10.0.37.27   52.179.23.131   80:30572/    TCP   2m
-     ```
+    ```
 
 2.  To see the Azure Vote app in action, open a web browser to the external IP address of your service as shown in the result of the previous command.
 
@@ -150,9 +150,9 @@ When the cluster is no longer needed, use the **`az group delete`** command to r
 
 1.  Run the following command to delete the cluster.
 
-     ```cli
+    ```cli
     az group delete --name myResourceGroup --yes --no-wait
-     ```
+    ```
 
 
 **Results**: You have now completed this lab.

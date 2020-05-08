@@ -10,9 +10,9 @@ Azure Function Apps uses the Azure App Service infrastructure. This topic shows 
 
 1.  In your browser, navigate to the following URL to open the ARM template:
 
-     ```cli
+    ```cli
     https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-500-Azure-Security%2Fmaster%2FAllfiles%2FLabs%2FMod2_Lab02%2Ftemplate.json
-     ```
+    ```
 
 2.  Click **Create new** under the Resource Group section.
 3.  Enter **myResourceGroup** as the name and click **OK**.
@@ -61,9 +61,9 @@ Azure Function Apps uses the Azure App Service infrastructure. This topic shows 
 1.  Under funtion keys select **copy** under actions on the default function key and paste this in a notepad file
 
 1.  Navigate to the following URL and copy the PowerShell code
-     ```cli
+    ```cli
     https://github.com/GoDeploy/AZ500/blob/master/AZ500%20Mod2%20Lab%202/RESTgetHTTPtrigger.ps1
-     ```
+    ```
 
 1.  Open a **PowerShell ISE** window and and paste the PowerShell code from the previous **URL**
 

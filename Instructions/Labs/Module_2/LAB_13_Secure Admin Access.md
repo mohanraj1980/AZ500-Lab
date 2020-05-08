@@ -19,9 +19,9 @@ Your public key can be shared with anyone, but only you (or your local security 
 
 1.  Open a browser and navigate to the following URL:
 
-     ```cli
+    ```cli
     http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html 
-     ```
+    ```
 
 1.  Download and install the **Putty Installer**.
 
