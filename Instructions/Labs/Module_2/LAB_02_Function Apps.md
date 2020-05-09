@@ -28,7 +28,7 @@ Azure Function Apps uses the Azure App Service infrastructure. This topic shows 
 
 1.  Select the function app service that has been created in the resource group
 
-**Note**: There are no functions currently assgined to the function app
+     **Note**: There are no functions currently assgined to the function app
 
 
 1.  Click **Functions**.
@@ -37,7 +37,7 @@ Azure Function Apps uses the Azure App Service infrastructure. This topic shows 
 
 1.  In the top right click the slide button for **Experimental Language support**,
 
-**Note**: New languages have now been added to the triggers
+    **Note**: New languages have now been added to the triggers
 
 
 1.  Select **HTTP trigger**.
@@ -61,11 +61,12 @@ Azure Function Apps uses the Azure App Service infrastructure. This topic shows 
 1.  Under funtion keys select **copy** under actions on the default function key and paste this in a notepad file
 
 1.  Navigate to the following URL and copy the PowerShell code
+    
     ```cli
-    https://github.com/GoDeploy/AZ500/blob/master/AZ500%20Mod2%20Lab%202/RESTgetHTTPtrigger.ps1
+    https://raw.githubusercontent.com/godeploy/AZ500/master/AZ500%20Mod2%20Lab%202/RESTgetHTTPtrigger.ps1
     ```
 
-1.  Open a **PowerShell ISE** window and and paste the PowerShell code from the previous **URL**
+1.  Open a **PowerShell ISE** window and and paste the PowerShell code from the previous **URL**.  *(If the Script pane is not open, select View/Show Script Pane. )*
 
 1.  Populate the variable `$functionappname = ""` with the name of your function app
 

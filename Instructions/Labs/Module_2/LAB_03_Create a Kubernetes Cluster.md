@@ -17,13 +17,13 @@ Azure Kubernetes Service (AKS) is a managed Kubernetes service that lets you qui
 
 1.  Run the following command in the **Cloud Shell** to create a new **Resource Group.**
 
-    ```cli
+    ```bash
     az group create --name myResourceGroup --location eastus
     ```
 
      **Note**: If you receive an error regarding the ```Microsoft.Network``` resource provider not being registered then run the following command and rerun the command in Step 4. Otherwise continue to Task 2.
      
-    ```cli
+    ```bash
     az provider register --namespace 'Microsoft.Network'
     ```
 
@@ -31,7 +31,7 @@ Azure Kubernetes Service (AKS) is a managed Kubernetes service that lets you qui
 
 1.  Run the following command in the **CloudShell**.
 
-    ```cli
+    ```bash
     az aks create  --resource-group myResourceGroup --name myAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys
     ```
  
@@ -76,7 +76,7 @@ A Kubernetes manifest file defines a desired state for the cluster, such as what
 
 1.  Run the following command in the cloud shell, this will directly pull the yaml file needed from GitHub to deploy the AKS application
 
-    ```cli
+    ```bash
     kubectl apply -f https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab03/azure-vote.yaml
     ```
 
@@ -139,7 +139,7 @@ To see current status, uptime, and resource usage for the Azure Vote pods, compl
     The *azure-vote-back* and *azure-vote-front* containers are displayed
 
 
-1.  To see logs for the `azure-vote-front` pod, select the **View live data (preview)** link on the right-hand side of the containers list. These logs include the *stdout* and *stderr* streams from the container.
+1.  Click the vote buttons in the application (Cats/Dogs) then to see logs for the `azure-vote-front` pod, select the **View live data (preview)** link on the right-hand side of the containers list. These logs include the *stdout* and *stderr* streams from the container.
 
 
 ### Task 7: Delete the cluster
@@ -148,9 +148,9 @@ To see current status, uptime, and resource usage for the Azure Vote pods, compl
 When the cluster is no longer needed, use the **`az group delete`** command to remove the resource group, container service, and all related resources.
 
 
-1.  Run the following command to delete the cluster.
+1.  Run the following command in **Cloud Shell** in Bash mode to delete the cluster.
 
-    ```cli
+    ```bash
     az group delete --name myResourceGroup --yes --no-wait
     ```
 
