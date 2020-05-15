@@ -57,6 +57,8 @@ In your policy, set:
 
       c. On the **Select** page, select **Isabella Simonsen**, and then click **Select**.
 
+      d. On the **Users and groups** page, click **Done**.
+
 11.  Click **Cloud apps or actions**.
 
 
@@ -70,6 +72,8 @@ In your policy, set:
     b. Click **Select**.
 
     c. On the **Select** page, select **Microsoft Azure Management**, and then click **Select**.
+
+    d. On the **Cloud apps** page, click **Done**.
 
 
 13.  In the **Access controls** section, click **Grant**.
@@ -185,11 +189,13 @@ In this lab, you walk you through configuring a conditional access policy enabli
 6.  Under **Cloud apps or actions**, select the **Select apps** radio button
     * The cloud app for the Azure portal is **Microsoft Azure Management**
     * Click **Select**
+    * Click **Done**
     </br>
 7.  Skip the **Conditions** section
 8.  Under **Grant**, make sure the **Grant access** radio button is selected
     * Check the box for **Require multi-factor authentication**
     * Click **Select**
+    * Click **Done**
     </br>
 9.  Skip the **Session** section
 10. Set the **Enable policy** toggle to **On**

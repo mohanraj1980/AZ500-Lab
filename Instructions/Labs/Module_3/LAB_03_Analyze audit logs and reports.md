@@ -14,7 +14,7 @@
 
 1.  Under **Resource group** click create new and use the default name "**Mod3Lab3**"
 
-1.  You can use the default populated SQL server name
+1.  You can use the default populated SQL server name with a unique string added to make a globaly unique name.
 
 1.  Click **Purchase** 
 
@@ -41,7 +41,7 @@ warning
 
 1.  **Click** storage account
 
-1.  Under create storage account input a unique name (**e.g. Mod3Lab3YOURNAME**)
+1.  Under create storage account input a unique name (**e.g. mod3lab3yourname**)
 
 1.  **Click OK**.
 
@@ -66,15 +66,17 @@ warning
 
 1.  **Enter** the following **Powershell Commands**.
 
-***Note*** Replace the section **{GlobalUniqueName}** with a globally unique name
+    ***Note*** Replace the section **{GlobalUniqueName}** with a globally unique name
 
-```powershell
-New-AzEventHubNamespace -ResourceGroupName Mod3Lab3  -NamespaceName {GlobalUniqueName} -Location eastus
-```
+    ```powershell
+    New-AzEventHubNamespace -ResourceGroupName Mod3Lab3  -NamespaceName {GlobalUniqueName} -Location eastus
+    ```
 
-```powershell
-New-AzEventHub -ResourceGroupName Mod3Lab3 -NamespaceName {GlobalUniqueName}  -EventHubName Mod3Lab3 -MessageRetentionInDays 3
-```
+    ```powershell
+    New-AzEventHub -ResourceGroupName Mod3Lab3 -NamespaceName {GlobalUniqueName}  -EventHubName Mod3Lab3 -MessageRetentionInDays 3
+    ```
+
+    Return to the Advanced Data Security blade in portal. (**Note** The Event Hub Namespace will be the unique name you specified).
 
 1.  When these commands have completed click **configure under event hubs**
 

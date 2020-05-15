@@ -18,7 +18,7 @@ Azure Kubernetes Service (AKS) is a managed Kubernetes service that lets you qui
 1.  Run the following command in the **Cloud Shell** to create a new **Resource Group.**
 
     ```bash
-    az group create --name myResourceGroup --location eastus
+    az group create --name myAKSResourceGroup --location eastus
     ```
 
      **Note**: If you receive an error regarding the ```Microsoft.Network``` resource provider not being registered then run the following command and rerun the command in Step 4. Otherwise continue to Task 2.
@@ -32,7 +32,7 @@ Azure Kubernetes Service (AKS) is a managed Kubernetes service that lets you qui
 1.  Run the following command in the **CloudShell**.
 
     ```bash
-    az aks create  --resource-group myResourceGroup --name myAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys
+    az aks create  --resource-group myAKSResourceGroup --name myAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys
     ```
  
 2.  After a few minutes, the command completes and returns **JSON-formatted** information about the cluster.
@@ -50,7 +50,7 @@ To manage a Kubernetes cluster, you use kubectl, the Kubernetes command-line cli
 
 
     ```azurecli-interactive
-    az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+    az aks get-credentials --resource-group myAKSResourceGroup --name myAKSCluster
     ```
 
 1.  To verify the connection to your cluster, use the kubectl-get command to return a list of the cluster nodes.
@@ -130,7 +130,7 @@ To see current status, uptime, and resource usage for the Azure Vote pods, compl
 
 1.  Open a web browser to the Azure portal.
 
-1.  Select your resource group, such as *myResourceGroup*, then select your AKS cluster, such as *myAKSCluster*.
+1.  Select your resource group, such as *myAKSResourceGroup*, then select your AKS cluster, such as *myAKSCluster*.
 1.  Under **Monitoring** on the left-hand side, choose **Insights**
 1.  Across the top, choose to **+ Add Filter**
 1.  Select *Namespace* as the property, then choose `<All but kube-system>`
@@ -139,7 +139,7 @@ To see current status, uptime, and resource usage for the Azure Vote pods, compl
     The *azure-vote-back* and *azure-vote-front* containers are displayed
 
 
-1.  Click the vote buttons in the application (Cats/Dogs) then to see logs for the `azure-vote-front` pod, select the **View live data (preview)** link on the right-hand side of the containers list. These logs include the *stdout* and *stderr* streams from the container.
+1.  Click the vote buttons in the application (Cats/Dogs) then to see logs for the `azure-vote-front` pod, Click view live data then click the vote buttons in the running application (Cats/Dogs) then view the live data under the Logs window. These logs include the *stdout* and *stderr* streams from the container.
 
 
 ### Task 7: Delete the cluster
@@ -148,11 +148,12 @@ To see current status, uptime, and resource usage for the Azure Vote pods, compl
 When the cluster is no longer needed, use the **`az group delete`** command to remove the resource group, container service, and all related resources.
 
 
-1.  Run the following command in **Cloud Shell** in Bash mode to delete the cluster.
+1.  Run the following command in the **Cloud Shell** in Bash mode to delete the Resource Group.
 
     ```bash
-    az group delete --name myResourceGroup --yes --no-wait
+    az group delete --name myAKSResourceGroup --yes --no-wait
     ```
 
+    **Note**:  It may take some time to delete the Resource Group.  The `--no-wait` option runs the command in the background.
 
 **Results**: You have now completed this lab.

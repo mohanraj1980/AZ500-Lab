@@ -28,27 +28,32 @@ Azure Function Apps uses the Azure App Service infrastructure. This topic shows 
 
 1.  Select the function app service that has been created in the resource group
 
-     **Note**: There are no functions currently assgined to the function app
+     **Note**: There are no functions currently assigned to the function app
 
+1.  Select **Click to go back to the classic Function App management experience**.
+
+    ![Screenshot](../Media/Module-2/2020-05-15_11-11-20.png)
 
 1.  Click **Functions**.
 
-1.  Click **New Function**,
+2.  Click **+ New Function**.
 
-1.  In the top right click the slide button for **Experimental Language support**,
+    ![Screenshot](../Media/Module-2/2020-05-15_11-12-12.png)
+
+3.  In the top right click the slide button for **Experimental Language support**,
 
     **Note**: New languages have now been added to the triggers
 
 
-1.  Select **HTTP trigger**.
+4.  Select **HTTP trigger**.
 
-1.  Change the language to **PowerShell**.
+5.  Change the language to **PowerShell**.
 
-1.  Leave the name as the default,
+6.  Leave the name as the default,
 
-1.  Make sure **Authorization** Level is set to **Function**,
+7.  Make sure **Authorization** Level is set to **Function**,
 
-1.  Click **Create**.
+8.  Click **Create**.
 
  You have now created template PS1 HTTP trigger. If the template code does not appear, refresh the page 
 
