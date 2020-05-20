@@ -99,7 +99,7 @@ In this section, you create a public load balancer that helps load balance virtu
 
 In this section, you  configure load balancer settings for a backend address pool and a health probe, and specify a load balancer rule.
 
-To distribute traffic to the VMs, a backend address pool contains the IP addresses of the virtual (NICs) connected to the load balancer. Create the backend address pool *myBackendPool* to inlcude *VM1* and *VM2*.
+To distribute traffic to the VMs, a backend address pool contains the IP addresses of the virtual (NICs) connected to the load balancer. Create the backend address pool *myBackendPool* to include *VM1* and *VM2*.
 
 
 1.  Click **All resources** in the left-hand menu, and then click **myLoadBalancer** from the resources list.
