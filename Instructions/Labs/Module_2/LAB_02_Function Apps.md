@@ -63,7 +63,7 @@ Azure Function Apps uses the Azure App Service infrastructure. This topic shows 
 
 1.  Under the **HTTP trigger** function click **Manage**.
 
-1.  Under funtion keys select **copy** under actions on the default function key and paste this in a notepad file
+1.  Under function keys select **copy** under actions on the default function key and paste this in a notepad file
 
 1.  Navigate to the following URL and copy the PowerShell code
     
