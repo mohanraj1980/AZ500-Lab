@@ -209,14 +209,14 @@ Create a public VM and a private VM in the virtual network. Later, you'll use th
 
     | Setting | Value |
     | ------- | ----- |
-    | **PUBLIC VM** | |
+    | PUBLIC VM | |
     | BASICS |  |
     | Virtual machine name | Enter *myVmPublic*. |
     | **NETWORKING** | |
     | Subnet | Select **Public (10.0.0.0/24)**. |
     | Public IP address | Accept the default. |
     | Public inbound ports | Select **Allow selected ports**. |
-    | Select inbound ports | Select **HTTP** and **RDP**.  *If the Networking tab does not allow the selected ports to be changed then go back to the Basic tab to add HTTP Port 80.* |
+    | Select inbound ports | Select **HTTP** and **RDP**.  *If the Networking tab does not allow the selected ports to be changed then go back to the Basics tab to add HTTP Port 80.* |
     | MANAGEMENT | |
     | Diagnostics storage account | Leave the default. |
     | **PRIVATE VM** | |

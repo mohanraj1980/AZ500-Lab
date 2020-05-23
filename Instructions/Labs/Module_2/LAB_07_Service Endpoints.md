@@ -196,15 +196,15 @@ To test network access to a storage account, deploy a VM to each subnet.
 2.  Select **Compute**, and then select **Virtual Machine**.
 3.  Enter, or select, the following information and then select **OK**:
 
-   |Setting|Value|
-   |----|----|
-   |Name| myVmPublic|
-   |User name|Enter a user name of your choosing.|
-   |Password| Pa55w.rd1234 |
-   |Subscription| Select your subscription.|
-   |Resource group| Select **Use existing** and select **myResourceGroup**.|
-   |Location| Select **East US**.|
-   |Image| Select **Windows Server 2019 Datacenter**.|
+    |Setting|Value|
+    |----|----|
+    |Name| myVmPublic|
+    |User name|Enter a user name of your choosing.|
+    |Password| Pa55w.rd1234 |
+    |Subscription| Select your subscription.|
+    |Resource group| Select **Use existing** and select **myResourceGroup**.|
+    |Location| Select **East US**.|
+    |Image| Select **Windows Server 2019 Datacenter**.|
 
    
 4.  Select a size for the virtual machine and then select **Select**.
@@ -223,18 +223,18 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 
 ### Task 8: Confirm access to storage account
 
-1.  Once the myVmPrivate VM finishes creating, open the blade for the VM by selecting **Go to resource**.  Select the **Connect** button, then select RDP"
+1.  Once the myVmPrivate VM finishes creating, open the blade for the VM by selecting **Go to resource**.  Select the **Connect** button, then select RDP.
 
-2.  After selecting the **Connect** button and RDP, a Remote Desktop Protocol (.rdp) file is created and downloaded to your computer.  
+2.  After selecting the **Connect** button and RDP, select the Download RDP File button.  A Remote Desktop Protocol (.rdp) file is created and downloaded to your computer.  
 3.  Open the downloaded rdp file. If prompted, select **Connect**. Enter the user name and password you specified when creating the VM. You may need to select **More choices**, then **Use a different account**, to specify the credentials you entered when you created the VM. 
 4.  Select **OK**.
 5.  You may receive a certificate warning during the sign-in process. If you receive the warning, select **Yes** or **Continue** to proceed with the connection.
 6.  On the *myVmPrivate* VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace `<storage-account-key>` and `<storage-account-name>` with values you supplied and retrieved in the **Create a storage account** task.
 
     ```powershell
-       $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
-       $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
-       New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\my-file-share"  -Credential $credential
+    $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
+    $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
+    New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\my-file-share"  -Credential $credential
     ```
 
      The Azure file share successfully mapped to the Z drive.

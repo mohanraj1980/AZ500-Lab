@@ -68,7 +68,7 @@ You can connect virtual networks to each other with virtual network peering. The
 ### Task 3: Create virtual machines
 
 1.  Select **+ Create a resource** on the upper, left corner of the Azure portal.
-2.  Select **Compute**, and then select **Windows Server 2016 Datacenter**. You can select a different operating system, but the remaining steps assume you selected **Windows Server 2016 Datacenter**. 
+2.  Select **Compute** > **Virtual Machine**. When creating the VM, select **Windows Server 2016 Datacenter** as the operating system. 
 3.  Enter, or select, the following information for **Basics**, accept the defaults for the remaining settings, and then select **Create**:
 
     |Setting|Value|
@@ -112,7 +112,7 @@ You can connect virtual networks to each other with virtual network peering. The
 ### Task 4: Communicate between VMs
 
 1.  In the *Search* box at the top of the portal, begin typing *myVM1*. When **myVM1** appears in the search results, select it.
-2.  Create a remote desktop connection to the *myVm1* VM "by selecting **Connect**, then selecting **RDP**, then selecting the **Download RDP File** button.
+2.  Create a remote desktop connection to the *myVm1* VM by selecting **Connect**, then selecting **RDP**, then selecting the **Download RDP File** button.
 
 3.  To connect to the VM, open the downloaded RDP file. If prompted, select **Connect**.
 4.  Enter the user name and password you specified when creating the VM (you may need to select **More choices**, then **Use a different account**, to specify the credentials you entered when you created the VM), then select **OK**.

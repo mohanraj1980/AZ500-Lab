@@ -43,13 +43,13 @@ In this section, you create a public load balancer that helps load balance virtu
 
 1.  On the top left-hand side of the screen click **+ Create a resource** > **Networking** > **Virtual network** and enter these values for the virtual network:
     - **myVnet** - for the name of the virtual network.
-    - 
     - **myResourceGroupLB** - for the name of the existing resource group
-    - **myBackendSubnet** - for the subnet name.
+
     
     Select the IP Addresses tab and enter the following values:
     
     - **10.0.0.0/16** - for the Address space
+    - **myBackendSubnet** - for the subnet name.
     - **10.0.0.0/24** - for the Subnet Address range
     </br>
 
@@ -276,7 +276,7 @@ A virtual network is needed for communication between the resources that you cre
 
 4. On the **Backend targets** tab, select **appGatewayBackendPool** for the **Backend target**.
 
-5. For the **HTTP setting**, select **Create new** to create a new HTTP setting. The HTTP setting will determine the behavior of the routing rule. In the **Add an HTTP setting** window that opens, enter *myHTTPSetting* for the **HTTP setting name**. Accept the default values for the other settings in the **Add an HTTP setting** window, then select **Add** to return to the **Add a routing rule** window. 
+5. For the **HTTP setting**, select **Add new** to create a new HTTP setting. The HTTP setting will determine the behavior of the routing rule. In the **Add an HTTP setting** window that opens, enter *myHTTPSetting* for the **HTTP setting name**. Accept the default values for the other settings in the **Add an HTTP setting** window, then select **Add** to return to the **Add a routing rule** window. 
 
 
 

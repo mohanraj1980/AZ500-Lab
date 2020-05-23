@@ -15,7 +15,7 @@ Creation of more than one plan is not required for most organizations. A plan ca
 
 1.  Select **Create a resource** in the upper left corner of the Azure portal.
 2.  Search for *DDoS*. When **DDos protection plan** appears in the search results, select it.
-3.  Click **Review + create**, then click **Create**.
+3.  Select **Create**.
 4.  Enter or select your own values, or enter, or select the following example values, and then select **Create**:
 
     |Setting        |Value                                              |
@@ -29,7 +29,7 @@ Creation of more than one plan is not required for most organizations. A plan ca
 
 1.  Select **Create a resource** in the upper left corner of the Azure portal.
 2.  Select **Networking**, and then select **Virtual network**.
-3.  Enter or select your own values, of enter or select the following example values, accept the remaining defaults, and then select **Create**:
+3.  Enter or select your own values, of enter or select the following example values, accept the remaining defaults, and then select **Review + create**, then click **Create**:
 
     | Setting         | Value                                                        |
     | ---------       | ---------                                                    |

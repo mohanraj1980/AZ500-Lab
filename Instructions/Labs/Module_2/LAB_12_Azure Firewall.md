@@ -54,11 +54,11 @@ Network traffic is subjected to the configured firewall rules when you route you
 In this task you will deploy the Azure firewall into the VNet.
 
 
-1.  In the Azure portal, click **All services** and search for and select **Azure Firewall**.
+1.  In the Azure portal, click **All services** and search for and select **Firewalls**.
 
      ![Screenshot](../Media/Module-2/04b7eeab-d6e9-4c62-bad9-6c496ac36e32.png)
 
-3.  On the **Firewall** blade click **Create firewall**. 
+3.  On the **Firewalls** blade click **Create firewall**. 
 
      ![Screenshot](../Media/Module-2/72817883-109b-4a17-9c26-edc7a71802ef.png)
 
@@ -208,8 +208,6 @@ In this task you will test the firewall to confirm that it works as expected.
           - You can resolve DNS names using the configured external DNS server.
 
 1.  To troubleshoot, go to **Network Watcher**, choose **Topology** then choose **TEST-FW-RG** to see the overall network diagram.
-
-1. Leave the all resources in place for the next lab.
 
 | WARNING: Prior to continuing you should remove all resources used for this lab.  To do this in the **Azure Portal** click **Resource groups**.  Select any resources groups you have created.  On the resource group blade click **Delete Resource group**, enter the Resource Group Name and click **Delete**.  Repeat the process for any additional Resource Groups you may have created. **Failure to do this may cause issues with other labs.** |
 | --- |
