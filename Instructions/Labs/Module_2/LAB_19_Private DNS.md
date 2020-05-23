@@ -50,7 +50,7 @@ It may take a few minutes to create the zone.
 2.  For **Name**, type **myAzureVNet**.
 3.  For **Resource group**, select **MyAzureResourceGroup**.
 4.  For **Location**, select **East US**.
-5.  Accept the other default values and select **Create**.
+5.  Accept the other default values and select **Review + create**, then select **Create**.
 
 ### Task 3: Link the virtual network
 
@@ -105,7 +105,7 @@ The following example creates a record with the relative name **db** in the DNS 
 
 2.  Select **+ Record set**.
 3.  For **Name**, type **db**.
-4.  For **IP Address**, type the IP address you see for **myVM01**. This should be auto registered when the virtual machine started.
+4.  For **IP Address**, type the IP address you see for **myVM01**. This should be auto registered when the virtual machine started and should be **10.0.0.4**.
 5.  Select **OK**.
 
 ### Task 6: Test the private zone

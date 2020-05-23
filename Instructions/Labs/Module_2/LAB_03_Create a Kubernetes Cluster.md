@@ -139,7 +139,7 @@ To see current status, uptime, and resource usage for the Azure Vote pods, compl
     The *azure-vote-back* and *azure-vote-front* containers are displayed
 
 
-1.  Click the vote buttons in the application (Cats/Dogs) then to see logs for the `azure-vote-front` pod, Click view live data then click the vote buttons in the running application (Cats/Dogs) then view the live data under the Logs window. These logs include the *stdout* and *stderr* streams from the container.
+1.  Click the view live data button then switch to the running application (Cats/Dogs) to click the vote buttons then switch back to view the live data under the Logs window.
 
 
 ### Task 7: Delete the cluster

@@ -43,15 +43,17 @@ In this section, you create a public load balancer that helps load balance virtu
 
 1.  On the top left-hand side of the screen click **+ Create a resource** > **Networking** > **Virtual network** and enter these values for the virtual network:
     - **myVnet** - for the name of the virtual network.
-    - **10.0.0.0/16** - for the Address space
+    - 
     - **myResourceGroupLB** - for the name of the existing resource group
     - **myBackendSubnet** - for the subnet name.
+    
+    Select the IP Addresses tab and enter the following values:
+    
+    - **10.0.0.0/16** - for the Address space
     - **10.0.0.0/24** - for the Subnet Address range
     </br>
 
-2.  Click **Create** to create the virtual network.
-
-     ![Screenshot](../Media/Module-2/19c5f372-c2c5-453b-8b64-f936162531e8.png)
+2.  Click **Review + create**, then click **Create** to create the virtual network.
 
 ### Task 3: Create virtual machines
 
@@ -286,7 +288,7 @@ A virtual network is needed for communication between the resources that you cre
 
 7. Select **Add**
 
-7. Select **Next: Tags** and then **Next: Review + create**.
+7. Select **Next: Tags** and then **Next: Review + create**, then select **Create**.
 
 
 ### Task 2: Test the application gateway
@@ -299,6 +301,7 @@ A virtual network is needed for communication between the resources that you cre
 
      ![Screenshot](../Media/Module-2/ea959c21-0774-413a-81aa-824547088c3d.png)
 
+1.  To verify, go to **Network Watcher**, choose **Topology** then choose **myResourceGroupLB** to see the overall network diagram.
 
 | WARNING: Prior to continuing you should remove all resources used for this lab.  To do this in the **Azure Portal** click **Resource groups**.  Select any resources groups you have created.  On the resource group blade click **Delete Resource group**, enter the Resource Group Name and click **Delete**.  Repeat the process for any additional Resource Groups you may have created. **Failure to do this may cause issues with other labs.** |
 | --- |
