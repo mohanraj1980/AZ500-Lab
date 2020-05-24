@@ -209,10 +209,10 @@ Create a public VM and a private VM in the virtual network. Later, you'll use th
 
     | Setting | Value |
     | ------- | ----- |
-    | PUBLIC VM | |
+    | **PUBLIC VM** | |
     | BASICS |  |
     | Virtual machine name | Enter *myVmPublic*. |
-    | **NETWORKING** | |
+    | NETWORKING | |
     | Subnet | Select **Public (10.0.0.0/24)**. |
     | Public IP address | Accept the default. |
     | Public inbound ports | Select **Allow selected ports**. |

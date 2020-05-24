@@ -25,7 +25,9 @@ After you connect your data sources, choose from a gallery of expertly created w
 
 
 6.  To finish creating the workspace, click **Review and Create**, then click **Create**.
-7.  Click **Add Azure Sentinel**
+7.  Once the workspace has been created, click **Add Azure Sentinel**.
+
+     ![Screenshot](../Media/Module-4/2020-05-24_08-19-29.png)
   
 
 ### Task 3: Connect data sources

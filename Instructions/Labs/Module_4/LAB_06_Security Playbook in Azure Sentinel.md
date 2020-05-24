@@ -13,15 +13,17 @@ Follow these steps to create a new security playbook in Azure Sentinel:
 
 1.  Open **Azure Sentinel** dashboard.
 
-2. Under **Management**, select **Playbooks**.
+2. Under **Configuration**, select **Playbooks**.
 
    ![Screenshot](../Media/Module-4/playbookimg.png)
 
-3. In the **Azure Sentinel - Playbooks (Preview)** page, click **Add** button.
+3. In the **Azure Sentinel - Playbooks** page, click **+ Add Playbook** button.
 
-   ![Screenshot](../Media/Module-4/create-playbook.png) 
+   ![Screenshot](../Media/Module-4/2020-05-24_08-22-31.png) 
 
-4. In the **Create Logic app** page, type the requested information to create your new logic app, and click **Create**. 
+4. In the **Create Logic app** page, type the requested information to create your new logic app, and click **Review + create** then click **Create**. 
+
+1. Once created click **Go to resource**.
 
 5. In the **Logic App Designer** select the template you want to use. If you select a template that necessitates credentials, you will have to provide them. Alternatively, you can create a new blank playbook from scratch. Select **Blank Logic App**. 
 
@@ -47,7 +49,7 @@ You can run a playbook on demand.
 
 To run a playbook on-demand:
 
-1. In the **incidents** page, select an incident and click on **View full details**.
+1. In the **Incidents** page, select an incident and click on **View full details**.
 
 2. In the **Alerts** tab, click on the alert you want to run the playbook on, and scroll all the way to the right and click **View playbooks** and select a playbook to **run** from the list of available playbooks on the subscription. 
 
